@@ -1,7 +1,43 @@
 <h1 align="center">Hi 👋, I'm Hammad Ahmad</h1>
 <h3 align="center">A passionate web developer and tech enthusiast. Welcome to my GitHub profile! Here, you'll find a collection of my projects, contributions, and explorations in the world of software development.</h3>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=1onn&label=Profile%20views&color=0e75b6&style=flat" alt="1onn" /> </p>
+
+## Skills
+- **Programming Languages**: JavaScript, Python, HTML/CSS, C++
+- **Web Development**: Frontend (React, Angular, Vue.js), Backend (Node.js, Express)
+- **Database**: MongoDB, MySQL, Firebase
+- **Version Control**: Git, GitHub
+- **Tools and Frameworks**: Bootstrap, Material UI, Redux, Flask
+- **Machine Learning**: TensorFlow, scikit-learn, Keras
+- **Cloud Platforms**: AWS, Azure, Google Cloud Platform
+- **DevOps**: Docker, Kubernetes, Jenkins
+
+## Interests
+I'm fascinated by the intersection of technology, creativity, and problem-solving. Here are some of my key interests:
+
+- **Web Development**: Crafting intuitive and visually appealing web interfaces that provide seamless user experiences.
+- **Full-Stack Development**: Building end-to-end applications, from the frontend to the backend and everything in between.
+- **Machine Learning**: Exploring the vast field of machine learning to develop intelligent applications that can make a positive impact.
+- **Open Source**: Contributing to open source projects and collaborating with other developers to create innovative solutions.
+
+## Projects
+Here are a few notable projects I've worked on:
+
+- [Project 1](link-to-project): A web application that enables users to manage and organize their tasks efficiently.
+- [Project 2](link-to-project): An e-commerce platform with advanced search and recommendation systems.
+- [Project 3](link-to-project): A machine learning model for sentiment analysis on social media data.
+
+## Contact Me
+Feel free to reach out if you have any questions, ideas, or collaboration opportunities. You can connect with me through the following channels:
+
+- Email: [your-email@example.com](mailto:your-email@example.com)
+- LinkedIn: [Your Name](https://www.linkedin.com/in/yourname)
+- Twitter: [@yourhandle](https://twitter.com/yourhandle)
+
+Let's connect and create amazing things together!
+
+
+
 
 
 <h3 align="left">Languages and Tools:</h3>
