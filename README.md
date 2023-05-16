@@ -4,13 +4,11 @@
 
 ## Skills
 - **Programming Languages**: JavaScript, Python, HTML/CSS, C++
-- **Web Development**: Frontend (React, Angular, Vue.js), Backend (Node.js, Express)
-- **Database**: MongoDB, MySQL, Firebase
+- **Web Development**: Frontend (React, Backend (Node.js, Express)
+- **Database**: MongoDB
 - **Version Control**: Git, GitHub
-- **Tools and Frameworks**: Bootstrap, Material UI, Redux, Flask
-- **Machine Learning**: TensorFlow, scikit-learn, Keras
-- **Cloud Platforms**: AWS, Azure, Google Cloud Platform
-- **DevOps**: Docker, Kubernetes, Jenkins
+- **Tools and Frameworks**: Bootstrap,
+
 
 ## Interests
 I'm fascinated by the intersection of technology, creativity, and problem-solving. Here are some of my key interests:
