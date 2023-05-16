@@ -34,6 +34,3 @@ Feel free to reach out if you have any questions, ideas, or collaboration opport
 Let's connect and create amazing things together!
 
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=1onn&show_icons=true&locale=en&layout=compact" alt="1onn" /></p>
-
-
