@@ -1,6 +1,5 @@
 <h1 align="center">Hello World 👋, I'm Hammad Ahmad!</h1>
 <p align="center">
-  <img width="250" src="https://i.ibb.co/YpYJKyb/github-profile-pic.png" />
 </p>
 <h3 align="center">A passionate web developer and tech enthusiast at heart. Dive into my world of software development here on GitHub.</h3>
 
