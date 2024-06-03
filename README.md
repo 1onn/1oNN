@@ -49,6 +49,6 @@ Check out a few of my most noteworthy projects:
 I'm always open to discuss your ideas, proposals, or if you're looking for collaboration. You can reach out to me through:
 
 - 📧 Email: [hammadahmad9999@hotmail.com](mailto:hammadahmad9999@hotmail.com)
-- 💼 LinkedIn: [Hammad Ahmad](https://www.linkedin.com/in/hammad-ahmad-408103241/)
+- 💼 LinkedIn: [Hammad Ahmad](https://www.linkedin.com/in/hammadahmad123/)
 
 Let's bridge gaps, collaborate, and create astounding things together! 🚀
