@@ -1,6 +1,6 @@
 # Hello World! 👋 I'm Hammad Ahmad!
 
-Driven Web Developer, Data Scientist, & Tech Aficionado | Igniting the digital world one line of code at a time. Explore my journey and contributions in the realms of web development and data science here on GitHub.
+Full Stack Developer, Data Scientist, & Tech Aficionado | Igniting the digital world one line of code at a time. Explore my journey and contributions in the realms of web development and data science here on GitHub.
 
 ---
 
