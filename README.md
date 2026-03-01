@@ -1,75 +1,116 @@
-# Hello World! 👋 I'm Hammad Ahmad!
+# Hammad Ahmad
 
-**Full Stack Developer, Data Scientist, & Tech Aficionado** | Igniting the digital world one line of code at a time. Explore my journey and contributions in the realms of web development and data science here on GitHub.
+MSc Researcher in Applied Artificial Intelligence  
+Representation Learning · Robust ML · Retrieval Systems · Uncertainty Modeling  
 
-## 🛠 Tech Stack
+📍 Bradford, United Kingdom  
+📧 hammadahmad9999@hotmail.com  
+🔗 LinkedIn: https://www.linkedin.com/in/hammadahmad123  
+🧠 ORCID: https://orcid.org/0009-0000-7873-4977  
 
-Here's a collection of technologies and tools that I utilize to turn ideas into reality, right in the browser.
+---
 
-### Programming Languages:
-- **JavaScript**
-- **Python**
-- **HTML/CSS**
-- **C++**
-- **SQL**
+## 👨‍🔬 Research Profile
 
-### Web Development:
-- **React.js**
-- **Node.js**
-- **Express.js**
-- **Bootstrap**
+I am an MSc researcher specializing in representation learning and robust machine learning systems for complex, high-dimensional scientific data.  
 
-### Database Management:
-- **MongoDB**
-- **MySQL**
-- **PostgreSQL**
+My work focuses on:
 
-### Machine Learning:
-- **Scikit-Learn**
-- **Pandas**
-- **NumPy**
-- **Matplotlib**
+- Graph-augmented representation learning
+- Retrieval-augmented systems (RAG)
+- Domain generalization and robustness benchmarking
+- Uncertainty-aware modeling
+- Surrogate modeling for scientific prediction
+- Interpretable machine learning (SHAP-based analysis)
 
-### Version Control:
-- **Git**
-- **GitHub**
+I am particularly interested in advancing data-efficient and generalizable ML systems under real-world constraints.
 
-### Other Tools:
-- **Jupyter Notebook**
-- **VS Code**
-- **Postman**
-- **Linux**
+---
 
-## 🎯 Interests
+## 🎓 Education
 
-In my pursuit of creating impactful and user-centric solutions, my areas of interest include:
+**MSc in Applied Artificial Intelligence & Data Analytics**  
+University of Bradford (2024–2025)  
+Dissertation: *Graph-Augmented Representation Learning for Reliable Retrieval in UK Financial Regulation*
 
-- 🌐 **Web Development**: Crafting dynamic and intuitive web interfaces that provide an exceptional user experience.
-- 💻 **Full-Stack Development**: Engineering comprehensive applications from scratch, delivering robust and efficient functionalities.
-- 📊 **Data Science and Analytics**: Utilizing data to build predictive models and derive meaningful insights.
-- 🤖 **Machine Learning**: Developing and implementing machine learning models to solve real-world problems.
-- 🤝 **Open Source Contribution**: Collaborating with the global developer community, creating innovative solutions, and making a meaningful impact.
+**BS in Bioinformatics**  
+COMSATS University Islamabad (2020–2024)  
+Thesis: *AI-Assisted Modeling and Risk Prediction for High-Dimensional Clinical Data*
 
-## 🏗 Projects
+---
 
-Check out a few of my most noteworthy projects:
+## 🔬 Research Experience
 
-### 📝 React-Keeper-App
-A clone of Google Keep, demonstrating expertise in web development, allowing users to manage notes effectively.
+### Research Assistant — University of Bradford (2025)
 
-### 🛏️ AI-Based Sleep Efficiency Predictor Tool
-An AI-based modern tool to predict sleep efficiency, integrated with a Random Forest Model and converted into a web app using Flask. [Certificate Link]
+- Developed graph-augmented representation learning pipelines integrating structured knowledge with dense embeddings.
+- Evaluated embedding models and cross-encoder re-ranking strategies for robustness and calibration.
+- Designed benchmarking experiments comparing semantic baselines with knowledge-enhanced architectures.
+- Investigated uncertainty-aware retrieval strategies for reliability in decision-support systems.
 
-## 📄 Publications
+### Research Assistant — COMSATS University Islamabad (2023–2024)
 
-### 📘 Comparative Analysis of Machine Learning Methods for Enhancing Sleep Efficiency
-Presented at the ICSMAI Conference 2024, Morocco. A comprehensive analysis of sleep efficiency by evaluating various influential factors using machine learning algorithms. [Presentation Link]
+- Conducted comparative studies of ensemble and surrogate models for biomedical prediction.
+- Achieved 93% classification accuracy using stratified cross-validation.
+- Applied SHAP-based interpretability and uncertainty analysis for clinical risk modeling.
+- Engineered scalable feature-processing pipelines for scientific benchmarking.
 
-## 📞 Let's Connect
+---
 
-I'm always open to discuss your ideas, proposals, or if you're looking for collaboration. You can reach out to me through:
+## 🏭 Industry Experience
 
-- 📧 **Email**: [hammadahmad9999@hotmail.com](mailto:hammadahmad9999@hotmail.com)
-- 💼 **LinkedIn**: [Hammad Ahmad]([(https://www.linkedin.com/in/hammadahmad123/)](https://www.linkedin.com/in/hammadahmad123/))
+### AI Automation & Voice-Agent Engineer — Outlyst (2025–Present)
 
-Let's bridge gaps, collaborate, and create astounding things together! 🚀
+- Designed and deployed LLM-based dialogue systems with asynchronous backend architectures.
+- Reduced manual workload by 50% through automated decision pipelines.
+- Optimized inference latency by 54% via backend optimization.
+- Built structured lead-tracking workflows for scalable AI-driven communication systems.
+
+---
+
+## 📚 Publication
+
+**Ahmad, H., Khan, U., Azam, M. (2024)**  
+*Comparative Analysis of Machine Learning Methods for Enhancing Sleep Efficiency and Prediction.*  
+In: Advances in Smart Medical, IoT & Artificial Intelligence. Springer.
+
+Presented at ICSMAI 2024 (Saidia, Morocco).
+
+---
+
+## 🛠 Technical Skills
+
+**Programming:** Python, C++, SQL  
+**ML Frameworks:** PyTorch, TensorFlow, scikit-learn  
+**Research Areas:** Representation learning, Active learning, Domain generalization, Uncertainty modeling  
+**Retrieval Systems:** Dense embeddings, Cross-encoders, Graph-based learning  
+**Scientific Computing:** NumPy, pandas, SHAP  
+**Tools:** Docker, Git, MLflow  
+
+---
+
+## 🚀 Current Focus
+
+- Robust representation learning under distribution shift
+- Reliable retrieval architectures
+- Uncertainty-aware generative systems
+- Scientific machine learning for structured data
+
+---
+
+## 📌 Open To
+
+- PhD opportunities in Applied Machine Learning / Scientific ML
+- Research collaborations
+- ML Engineering roles focused on robust AI systems
+
+---
+
+## 📫 Contact
+
+Email: hammadahmad9999@hotmail.com  
+LinkedIn: https://www.linkedin.com/in/hammadahmad123  
+
+---
+
+> "Building reliable machine learning systems that generalize beyond the dataset."
