@@ -3,7 +3,7 @@
 MSc Researcher in Applied Artificial Intelligence  
 Representation Learning · Robust ML · Retrieval Systems · Uncertainty Modeling  
 
-📍 Bradford, United Kingdom  
+📍 Leeds, United Kingdom  
 📧 hammadahmad9999@hotmail.com  
 🔗 LinkedIn: https://www.linkedin.com/in/hammadahmad123  
 🧠 ORCID: https://orcid.org/0009-0000-7873-4977  
