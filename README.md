@@ -59,7 +59,7 @@ Thesis: *AI-Assisted Modeling and Risk Prediction for High-Dimensional Clinical 
 
 ## 🏭 Industry Experience
 
-### AI Automation & Voice-Agent Engineer — Outlyst (2025–Present)
+### AI Automation & Voice-Agent Engineer — Outlyst (2025–2026)
 
 - Designed and deployed LLM-based dialogue systems with asynchronous backend architectures.
 - Reduced manual workload by 50% through automated decision pipelines.
