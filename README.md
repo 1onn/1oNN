@@ -108,7 +108,7 @@ Presented at ICSMAI 2024 (Saidia, Morocco).
 
 ## 📫 Contact
 
-Email: hammadahmad.ai@gmail.com  
+Email: hammadahmad.ml@gmail.com  
 LinkedIn: https://www.linkedin.com/in/hammadahmad123  
 
 ---
