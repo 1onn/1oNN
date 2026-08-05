@@ -1,116 +1,88 @@
 # Hammad Ahmad
 
-MSc Researcher in Applied Artificial Intelligence  
-Representation Learning · Robust ML · Retrieval Systems · Uncertainty Modeling  
+**AI / Machine Learning Engineer** · LLMs · RAG · Knowledge Graphs
+MSc Applied Artificial Intelligence & Data Analytics (Merit), University of Bradford
 
-📍 Leeds, United Kingdom  
-📧 hammadahmad.ml@gmail.com  
-🔗 LinkedIn: https://www.linkedin.com/in/hammadahmad123  
-🧠 ORCID: https://orcid.org/0009-0000-7873-4977  
+Bradford, UK (open to relocation)
+[hammadahmad.co.uk](https://hammadahmad.co.uk) · [hammadahmad.ml@gmail.com](mailto:hammadahmad.ml@gmail.com) · [LinkedIn](https://www.linkedin.com/in/hammadahmad123) · [ORCID](https://orcid.org/0009-0000-7873-4977)
 
----
-
-## 👨‍🔬 Research Profile
-
-I am an MSc researcher specializing in representation learning and robust machine learning systems for complex, high-dimensional scientific data.  
-
-My work focuses on:
-
-- Graph-augmented representation learning
-- Retrieval-augmented systems (RAG)
-- Domain generalization and robustness benchmarking
-- Uncertainty-aware modeling
-- Surrogate modeling for scientific prediction
-- Interpretable machine learning (SHAP-based analysis)
-
-I am particularly interested in advancing data-efficient and generalizable ML systems under real-world constraints.
+I build retrieval systems that pair vector embeddings with knowledge graphs, benchmark predictive
+models on large real-world datasets, and take both to production: retrieval design, backend APIs,
+deployment. First-author peer-reviewed publication (Springer).
 
 ---
 
-## 🎓 Education
+## Selected work
 
-**MSc in Applied Artificial Intelligence & Data Analytics**  
-University of Bradford (2024–2025)  
-Dissertation: *Graph-Augmented Representation Learning for Reliable Retrieval in UK Financial Regulation*
+| Project | What it is | Measured result |
+|---|---|---|
+| **[finlaw-uk](https://github.com/1oNN/finlaw-uk)** | Graph-augmented RAG over UK financial regulation. Neo4j validates every citation; rules absent from the graph are flagged as potential hallucinations. MSc dissertation. | 0.82 source accuracy, 0.81 citation quality, 0.76 RAGAS faithfulness, 0.74 answer relevance on a 110-item benchmark |
+| **[diabetes-app](https://github.com/1oNN/diabetes-app)** | 11-classifier benchmark on CDC BRFSS 2015, shipped as a lab-free 19-question screening app (Flask + React). | Random Forest: 93.15% accuracy, 98.4% sensitivity, 0.9887 AUC on 253,680 records |
+| **[VoiceFlow](https://github.com/1oNN/VoiceFlow)** | Retell call exporter with **local** Whisper transcription (large-v3). Call audio never crosses another trust boundary. | Async jobs, live SSE progress, one-command Docker deploy |
+| **[sleep-efficiency-app](https://github.com/1oNN/sleep-efficiency-app)** | The model from my first-author ICSMAI 2024 paper, served behind a Flask form. | Random Forest R² 0.8569 (MSE 0.0027), best of four models |
+| **Jobzyl** ([live](https://jobzyl.com)) | Job-search aggregator: 20 live boards across 60+ countries, searched in parallel and streamed over SSE. | First results in ~1.4s; 11 RLS-locked Supabase tables |
 
-**BS in Bioinformatics**  
-COMSATS University Islamabad (2020–2024)  
-Thesis: *AI-Assisted Modeling and Risk Prediction for High-Dimensional Clinical Data*
-
----
-
-## 🔬 Research Experience
-
-### Research Assistant — University of Bradford (2025)
-
-- Developed graph-augmented representation learning pipelines integrating structured knowledge with dense embeddings.
-- Evaluated embedding models and cross-encoder re-ranking strategies for robustness and calibration.
-- Designed benchmarking experiments comparing semantic baselines with knowledge-enhanced architectures.
-- Investigated uncertainty-aware retrieval strategies for reliability in decision-support systems.
-
-### Research Assistant — COMSATS University Islamabad (2023–2024)
-
-- Conducted comparative studies of ensemble and surrogate models for biomedical prediction.
-- Achieved 93% classification accuracy using stratified cross-validation.
-- Applied SHAP-based interpretability and uncertainty analysis for clinical risk modeling.
-- Engineered scalable feature-processing pipelines for scientific benchmarking.
+Full case studies, with architecture diagrams and the decisions behind them:
+**[hammadahmad.co.uk/projects](https://hammadahmad.co.uk/projects)**
 
 ---
 
-## 🏭 Industry Experience
+## Experience
 
-### AI Automation & Voice-Agent Engineer — Outlyst (2025–2026)
+**AI / Machine Learning Engineer** - Outlyst (Oct 2025 - Mar 2026, Leeds, UK / Remote)
+Built backend dialogue-flow logic and workflow automation for an AI voice-agent system (Retell AI,
+FastAPI). Profiled async I/O and connection pooling to cut mean call latency 54% (2.4s to 1.1s),
+sustained across 2,100+ concurrent stateful sessions. Gatekeeper detection and callback scheduling
+lifted lead conversions ~25%. An internal micro-CRM with automated extraction pipelines reclaimed
+100+ staff hours per week.
 
-- Designed and deployed LLM-based dialogue systems with asynchronous backend architectures.
-- Reduced manual workload by 50% through automated decision pipelines.
-- Optimized inference latency by 54% via backend optimization.
-- Built structured lead-tracking workflows for scalable AI-driven communication systems.
+**Research Assistant, Machine Learning & LLMs** - University of Bradford (Jan 2025 - Sep 2025)
+Built FinLaw-UK: Mistral 7B served locally via Ollama, paired with a Neo4j knowledge graph, over
+FCA, PRA, FRC and statutory sources. Engineered the retrieval pipeline (clause-level segmentation,
+Sentence Transformer embeddings, cross-encoder re-ranking, graph citation checks) and the evaluation
+harness, extending RAGAS with custom citation-precision and legal-completeness metrics.
 
----
-
-## 📚 Publication
-
-**Ahmad, H., Khan, U., Azam, M. (2024)**  
-*Comparative Analysis of Machine Learning Methods for Enhancing Sleep Efficiency and Prediction.*  
-In: Advances in Smart Medical, IoT & Artificial Intelligence. Springer.
-
-Presented at ICSMAI 2024 (Saidia, Morocco).
-
----
-
-## 🛠 Technical Skills
-
-**Programming:** Python, C++, SQL  
-**ML Frameworks:** PyTorch, TensorFlow, scikit-learn  
-**Research Areas:** Representation learning, Active learning, Domain generalization, Uncertainty modeling  
-**Retrieval Systems:** Dense embeddings, Cross-encoders, Graph-based learning  
-**Scientific Computing:** NumPy, pandas, SHAP  
-**Tools:** Docker, Git, MLflow  
+**Research Assistant, Data Science** - COMSATS University Islamabad (Jul 2023 - Jul 2024)
+Benchmarked 11 classifiers for diabetes risk on 253,680 CDC BRFSS records under an 80/20 split,
+correcting the 86/14 class imbalance with random over-sampling after comparing it against SMOTE and
+ADASYN. Deployed the winning model behind a REST API with SHAP-based interpretability.
 
 ---
 
-## 🚀 Current Focus
+## Education
 
-- Robust representation learning under distribution shift
-- Reliable retrieval architectures
-- Uncertainty-aware generative systems
-- Scientific machine learning for structured data
+**MSc, Applied Artificial Intelligence & Data Analytics (Merit)** - University of Bradford, 2024-2025
+Dissertation: *FinLaw-UK: A Graph-Augmented Retrieval Chatbot for Reliable and Transparent UK
+Financial Regulation*
 
----
-
-## 📌 Open To
-
-- PhD opportunities in Applied Machine Learning / Scientific ML
-- Research collaborations
-- ML Engineering roles focused on robust AI systems
+**BS, Bioinformatics** - COMSATS University Islamabad, 2020-2024
+Thesis: *AI-Assisted Analysis and Prediction of At-Risk Diabetic Individuals*
 
 ---
 
-## 📫 Contact
+## Publication
 
-Email: hammadahmad.ml@gmail.com  
-LinkedIn: https://www.linkedin.com/in/hammadahmad123  
+**Ahmad, H.** (first & corresponding author), Khan, M.U., Azam, M. (2024). *Comparative Analysis of
+Machine Learning Methods for Enhancing Sleep Efficiency and Prediction.* In: Advances in Smart
+Medical, IoT & Artificial Intelligence, ICSMAI 2024, Springer Nature, pp. 3-15.
+Presented at ICSMAI 2024, Saidia, Morocco.
+DOI: [10.1007/978-3-031-66854-8_1](https://doi.org/10.1007/978-3-031-66854-8_1)
 
 ---
 
-> "Building reliable machine learning systems that generalize beyond the dataset."
+## Technical skills
+
+**Machine learning & NLP:** PyTorch, TensorFlow, scikit-learn, LLMs, RAG, Sentence Transformers, MLflow
+**LLM & retrieval:** vector embeddings, semantic search, cross-encoder re-ranking, RAGAS evaluation, Neo4j knowledge graphs, Ollama
+**Engineering:** Python, C++, SQL, FastAPI, Flask, REST APIs, React, Next.js
+**Data & infrastructure:** PostgreSQL, Neo4j, pandas, NumPy, Docker, AWS, Git, Linux
+
+---
+
+## Open to
+
+Full-time AI/ML engineering and research roles, and MSCA-eligible PhD or postdoc positions in the EU
+(earliest start October 2026). Research interests: graph-augmented retrieval, LLM faithfulness
+evaluation, systems optimisation for high-throughput ML pipelines, interpretable clinical modelling.
+
+Languages: English (IELTS 7.0, CEFR C1) · Urdu (native) · German (A1.2)
