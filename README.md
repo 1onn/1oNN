@@ -8,39 +8,12 @@ Bradford, UK — open to relocation
 <br>
 
 <a href="https://hammadahmad.co.uk"><img src="https://img.shields.io/badge/Portfolio-hammadahmad.co.uk-1a1a1a?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" /></a>
+<a href="https://hammadahmad.co.uk/projects"><img src="https://img.shields.io/badge/Case%20studies-Read-6C8EBF?style=for-the-badge" alt="Case studies" /></a>
+<a href="https://jobzyl.com"><img src="https://img.shields.io/badge/Jobzyl-Live-3FCF8E?style=for-the-badge" alt="Jobzyl — live" /></a>
 <a href="https://www.linkedin.com/in/hammadahmad123"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 <a href="mailto:hammadahmad.ml@gmail.com"><img src="https://img.shields.io/badge/Email-Say%20hello-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
 <a href="https://orcid.org/0009-0000-7873-4977"><img src="https://img.shields.io/badge/ORCID-0009--0000--7873--4977-A6CE39?style=for-the-badge&logo=orcid&logoColor=white" alt="ORCID" /></a>
 <a href="https://doi.org/10.1007/978-3-031-66854-8_1"><img src="https://img.shields.io/badge/Publication-Springer-0B7285?style=for-the-badge&logo=springer&logoColor=white" alt="Springer publication" /></a>
-
-</div>
-
----
-
-<div align="center">
-
-### Where to find my work
-
-<table>
-<tr>
-<td align="center" width="25%">
-<a href="https://hammadahmad.co.uk"><img src="https://skillicons.dev/icons?i=vercel" width="48" /><br><b>Portfolio</b></a><br>
-<sub>hammadahmad.co.uk</sub>
-</td>
-<td align="center" width="25%">
-<a href="https://hammadahmad.co.uk/projects"><img src="https://skillicons.dev/icons?i=md" width="48" /><br><b>Case studies</b></a><br>
-<sub>architecture + decisions</sub>
-</td>
-<td align="center" width="25%">
-<a href="https://jobzyl.com"><img src="https://skillicons.dev/icons?i=nextjs" width="48" /><br><b>Jobzyl</b></a><br>
-<sub>live product</sub>
-</td>
-<td align="center" width="25%">
-<a href="https://orcid.org/0009-0000-7873-4977"><img src="https://skillicons.dev/icons?i=latex" width="48" /><br><b>Research</b></a><br>
-<sub>ORCID + Springer</sub>
-</td>
-</tr>
-</table>
 
 </div>
 
