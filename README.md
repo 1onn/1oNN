@@ -1,7 +1,5 @@
 <div align="center">
 
-<!-- ─────────────────────────  HEADER  ───────────────────────── -->
-
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=26&duration=3200&pause=900&color=6C8EBF&center=true&vCenter=true&width=760&lines=Hi%2C+I'm+Hammad+Ahmad;AI+%2F+Machine+Learning+Engineer;LLMs+%C2%B7+RAG+%C2%B7+Knowledge+Graphs;I+build+retrieval+systems+that+cite+their+sources" alt="AI / Machine Learning Engineer — LLMs, RAG, Knowledge Graphs" />
 
 **MSc Applied Artificial Intelligence & Data Analytics (Merit)** · University of Bradford<br>
@@ -9,21 +7,40 @@ Bradford, UK — open to relocation
 
 <br>
 
-<a href="https://hammadahmad.co.uk">
-  <img src="https://img.shields.io/badge/Portfolio-hammadahmad.co.uk-1a1a1a?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" />
-</a>
-<a href="https://www.linkedin.com/in/hammadahmad123">
-  <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-</a>
-<a href="mailto:hammadahmad.ml@gmail.com">
-  <img src="https://img.shields.io/badge/Email-Say%20hello-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-</a>
-<a href="https://orcid.org/0009-0000-7873-4977">
-  <img src="https://img.shields.io/badge/ORCID-0009--0000--7873--4977-A6CE39?style=for-the-badge&logo=orcid&logoColor=white" alt="ORCID" />
-</a>
-<a href="https://doi.org/10.1007/978-3-031-66854-8_1">
-  <img src="https://img.shields.io/badge/Publication-Springer-0B7285?style=for-the-badge&logo=springer&logoColor=white" alt="Springer publication" />
-</a>
+<a href="https://hammadahmad.co.uk"><img src="https://img.shields.io/badge/Portfolio-hammadahmad.co.uk-1a1a1a?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" /></a>
+<a href="https://www.linkedin.com/in/hammadahmad123"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+<a href="mailto:hammadahmad.ml@gmail.com"><img src="https://img.shields.io/badge/Email-Say%20hello-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+<a href="https://orcid.org/0009-0000-7873-4977"><img src="https://img.shields.io/badge/ORCID-0009--0000--7873--4977-A6CE39?style=for-the-badge&logo=orcid&logoColor=white" alt="ORCID" /></a>
+<a href="https://doi.org/10.1007/978-3-031-66854-8_1"><img src="https://img.shields.io/badge/Publication-Springer-0B7285?style=for-the-badge&logo=springer&logoColor=white" alt="Springer publication" /></a>
+
+</div>
+
+---
+
+<div align="center">
+
+### Where to find my work
+
+<table>
+<tr>
+<td align="center" width="25%">
+<a href="https://hammadahmad.co.uk"><img src="https://skillicons.dev/icons?i=vercel" width="48" /><br><b>Portfolio</b></a><br>
+<sub>hammadahmad.co.uk</sub>
+</td>
+<td align="center" width="25%">
+<a href="https://hammadahmad.co.uk/projects"><img src="https://skillicons.dev/icons?i=md" width="48" /><br><b>Case studies</b></a><br>
+<sub>architecture + decisions</sub>
+</td>
+<td align="center" width="25%">
+<a href="https://jobzyl.com"><img src="https://skillicons.dev/icons?i=nextjs" width="48" /><br><b>Jobzyl</b></a><br>
+<sub>live product</sub>
+</td>
+<td align="center" width="25%">
+<a href="https://orcid.org/0009-0000-7873-4977"><img src="https://skillicons.dev/icons?i=latex" width="48" /><br><b>Research</b></a><br>
+<sub>ORCID + Springer</sub>
+</td>
+</tr>
+</table>
 
 </div>
 
@@ -50,7 +67,16 @@ I build **retrieval systems that pair vector embeddings with knowledge graphs**,
 ### 🏛️ [finlaw-uk](https://github.com/1oNN/finlaw-uk)
 **Graph-augmented RAG over UK financial regulation**
 
+[![Stars](https://img.shields.io/github/stars/1oNN/finlaw-uk?style=flat-square&labelColor=1a1a1a&color=6C8EBF)](https://github.com/1oNN/finlaw-uk/stargazers)
+[![Last commit](https://img.shields.io/github/last-commit/1oNN/finlaw-uk?style=flat-square&labelColor=1a1a1a&color=6C8EBF)](https://github.com/1oNN/finlaw-uk/commits)
+
 Hybrid BM25 + BGE-small retrieval with reciprocal rank fusion, Mistral 7B-Instruct served locally via Ollama, and a Neo4j knowledge graph that verifies every citation — provisions absent from the graph are flagged as potential hallucinations.
+
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Neo4j](https://img.shields.io/badge/-Neo4j-4581C3?style=flat-square&logo=neo4j&logoColor=white)
+![Ollama](https://img.shields.io/badge/-Ollama-000000?style=flat-square&logo=ollama&logoColor=white)
+![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 
 `0.82` source accuracy · `0.81` citation quality<br>
 `0.76` RAGAS faithfulness · `0.74` answer relevance<br>
@@ -62,7 +88,16 @@ Hybrid BM25 + BGE-small retrieval with reciprocal rank fusion, Mistral 7B-Instru
 ### 🩺 [diabetes-app](https://github.com/1oNN/diabetes-app)
 **11-classifier benchmark + screening tool**
 
+[![Stars](https://img.shields.io/github/stars/1oNN/diabetes-app?style=flat-square&labelColor=1a1a1a&color=6C8EBF)](https://github.com/1oNN/diabetes-app/stargazers)
+[![Last commit](https://img.shields.io/github/last-commit/1oNN/diabetes-app?style=flat-square&labelColor=1a1a1a&color=6C8EBF)](https://github.com/1oNN/diabetes-app/commits)
+
 Diabetes risk on CDC BRFSS 2015, comparing random over-sampling, SMOTE and ADASYN with resampling confined to the training folds. Shipped as a lab-free, 19-question screening app.
+
+![scikit-learn](https://img.shields.io/badge/-scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
+![pandas](https://img.shields.io/badge/-pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+![Flask](https://img.shields.io/badge/-Flask-000000?style=flat-square&logo=flask&logoColor=white)
+![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![SHAP](https://img.shields.io/badge/-SHAP-8B5CF6?style=flat-square)
 
 Random Forest best on ROC-AUC and sensitivity<br>
 `253,680` records · `14%` positive class<br>
@@ -76,7 +111,14 @@ Random Forest best on ROC-AUC and sensitivity<br>
 ### 🎙️ [VoiceFlow](https://github.com/1oNN/VoiceFlow)
 **Privacy-first call transcription**
 
+[![Stars](https://img.shields.io/github/stars/1oNN/VoiceFlow?style=flat-square&labelColor=1a1a1a&color=6C8EBF)](https://github.com/1oNN/VoiceFlow/stargazers)
+[![Last commit](https://img.shields.io/github/last-commit/1oNN/VoiceFlow?style=flat-square&labelColor=1a1a1a&color=6C8EBF)](https://github.com/1oNN/VoiceFlow/commits)
+
 Retell call exporter with **local** Whisper transcription (large-v3) — call audio never crosses another trust boundary.
+
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Whisper](https://img.shields.io/badge/-Whisper-412991?style=flat-square&logo=openai&logoColor=white)
+![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 
 Async jobs · live SSE progress<br>
 One-command Docker deploy
@@ -87,7 +129,14 @@ One-command Docker deploy
 ### 😴 [sleep-efficiency-app](https://github.com/1oNN/sleep-efficiency-app)
 **The model behind my ICSMAI 2024 paper**
 
+[![Stars](https://img.shields.io/github/stars/1oNN/sleep-efficiency-app?style=flat-square&labelColor=1a1a1a&color=6C8EBF)](https://github.com/1oNN/sleep-efficiency-app/stargazers)
+[![Last commit](https://img.shields.io/github/last-commit/1oNN/sleep-efficiency-app?style=flat-square&labelColor=1a1a1a&color=6C8EBF)](https://github.com/1oNN/sleep-efficiency-app/commits)
+
 Four regression models compared, winner served behind a Flask form.
+
+![scikit-learn](https://img.shields.io/badge/-scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
+![NumPy](https://img.shields.io/badge/-NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
+![Flask](https://img.shields.io/badge/-Flask-000000?style=flat-square&logo=flask&logoColor=white)
 
 Random Forest `R² 0.8569` (MSE 0.0027)<br>
 *First-author, corresponding author*
@@ -98,7 +147,14 @@ Random Forest `R² 0.8569` (MSE 0.0027)<br>
 <td colspan="2" valign="top">
 
 ### 🔎 Jobzyl — [jobzyl.com](https://jobzyl.com)
+
 **Job-search aggregator** · 20 live boards across 60+ countries, searched in parallel and streamed over SSE. First results in **~1.4s**, backed by 11 RLS-locked Supabase tables.
+
+![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Next.js](https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![Supabase](https://img.shields.io/badge/-Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![Vercel](https://img.shields.io/badge/-Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
 
 </td>
 </tr>
@@ -127,53 +183,43 @@ Random Forest `R² 0.8569` (MSE 0.0027)<br>
 
 ## Tech stack
 
-<table>
-<tr><td><b>ML & NLP</b></td><td>
+<div align="center">
 
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
+**Machine learning & data**
+
+[![ML stack](https://skillicons.dev/icons?i=pytorch,tensorflow,sklearn,opencv,py,r&perline=6)](https://skillicons.dev)
+
 ![XGBoost](https://img.shields.io/badge/XGBoost-1B7A3D?style=flat-square)
 ![LightGBM](https://img.shields.io/badge/LightGBM-2C6E49?style=flat-square)
-![Hugging Face](https://img.shields.io/badge/Sentence%20Transformers-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
+![pandas](https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
 ![MLflow](https://img.shields.io/badge/MLflow-0194E2?style=flat-square&logo=mlflow&logoColor=white)
+![Hugging Face](https://img.shields.io/badge/Sentence%20Transformers-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
 
-</td></tr>
-<tr><td><b>Retrieval & knowledge</b></td><td>
+<br>
+
+**Retrieval & knowledge**
 
 ![RAG](https://img.shields.io/badge/RAG-6C8EBF?style=flat-square)
 ![Hybrid retrieval](https://img.shields.io/badge/BM25%20%2B%20Dense-6C8EBF?style=flat-square)
-![Cross-encoder re-ranking](https://img.shields.io/badge/Cross--encoder%20re--ranking-6C8EBF?style=flat-square)
+![Cross-encoder](https://img.shields.io/badge/Cross--encoder%20re--ranking-6C8EBF?style=flat-square)
 ![RAGAS](https://img.shields.io/badge/RAGAS-6C8EBF?style=flat-square)
 ![Neo4j](https://img.shields.io/badge/Neo4j-4581C3?style=flat-square&logo=neo4j&logoColor=white)
 ![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white)
 
-</td></tr>
-<tr><td><b>Engineering</b></td><td>
+<br>
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-336791?style=flat-square&logo=postgresql&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+**Engineering**
 
-</td></tr>
-<tr><td><b>Data & infra</b></td><td>
+[![Engineering stack](https://skillicons.dev/icons?i=py,cpp,ts,fastapi,flask,react,nextjs,nodejs&perline=8)](https://skillicons.dev)
 
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![pandas](https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
-![GCP](https://img.shields.io/badge/GCP-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+<br>
 
-</td></tr>
-</table>
+**Data & infrastructure**
+
+[![Infra stack](https://skillicons.dev/icons?i=postgres,docker,githubactions,aws,gcp,linux,git,supabase&perline=8)](https://skillicons.dev)
+
+</div>
 
 ---
 
@@ -181,14 +227,9 @@ Random Forest `R² 0.8569` (MSE 0.0027)<br>
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=1oNN&show_icons=true&hide_border=true&theme=github_dark&icon_color=6C8EBF&hide=issues" />
-  <img src="https://github-readme-stats.vercel.app/api?username=1oNN&show_icons=true&hide_border=true&theme=graywhite&icon_color=1F6FEB&hide=issues" alt="GitHub stats" height="165" />
-</picture>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=1oNN&layout=compact&hide_border=true&langs_count=8&theme=github_dark" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=1oNN&layout=compact&hide_border=true&langs_count=8&theme=graywhite" alt="Top languages" height="165" />
-</picture>
+<!-- Generated daily by .github/workflows/metrics.yml — served from this repo, so it can't rate-limit -->
+<img src="https://raw.githubusercontent.com/1oNN/1oNN/main/metrics.svg" alt="GitHub metrics" width="47%" />
+<img src="https://raw.githubusercontent.com/1oNN/1oNN/main/metrics.languages.svg" alt="Most used languages" width="47%" />
 
 <br>
 
@@ -199,7 +240,6 @@ Random Forest `R² 0.8569` (MSE 0.0027)<br>
 
 <br><br>
 
-<!-- Requires the snake workflow (see setup notes) — delete these three lines if you skip it -->
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/1oNN/1oNN/output/github-snake-dark.svg" />
   <img src="https://raw.githubusercontent.com/1oNN/1oNN/output/github-snake.svg" alt="Contribution graph" />
@@ -297,15 +337,9 @@ Currently working as a Quality Control Assistant at Myton Food Group (Morrisons)
 
 If you're working on retrieval, evaluation, or anything where a model needs to show its sources — I'd like to hear about it.
 
-<a href="mailto:hammadahmad.ml@gmail.com">
-  <img src="https://img.shields.io/badge/hammadahmad.ml@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-</a>
-<a href="https://www.linkedin.com/in/hammadahmad123">
-  <img src="https://img.shields.io/badge/in/hammadahmad123-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-</a>
-<a href="https://hammadahmad.co.uk">
-  <img src="https://img.shields.io/badge/hammadahmad.co.uk-1a1a1a?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website" />
-</a>
+<a href="mailto:hammadahmad.ml@gmail.com"><img src="https://img.shields.io/badge/hammadahmad.ml@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+<a href="https://www.linkedin.com/in/hammadahmad123"><img src="https://img.shields.io/badge/in/hammadahmad123-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+<a href="https://hammadahmad.co.uk"><img src="https://img.shields.io/badge/hammadahmad.co.uk-1a1a1a?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website" /></a>
 
 <br><br>
 
