@@ -1,0 +1,42 @@
+# Save this at: .github/workflows/cards.yml  (in the 1oNN/1oNN repo)
+#
+# Regenerates the four profile card SVGs and commits them into this repo.
+# NO personal access token required — it uses the automatic GITHUB_TOKEN that
+# GitHub injects into every workflow run. Nothing to create, nothing to paste.
+
+name: Profile cards
+
+on:
+  schedule:
+    - cron: "0 3 * * *"   # refresh daily at 03:00 UTC
+  workflow_dispatch:       # lets you run it manually from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  cards:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Generate cards
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_USER: ${{ github.repository_owner }}
+        run: python3 scripts/make_cards.py
+
+      - name: Commit if anything changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add metrics.svg metrics-dark.svg \
+                  metrics.languages.svg metrics.languages-dark.svg
+          if git diff --staged --quiet; then
+            echo "Stats unchanged — nothing to commit."
+          else
+            git commit -m "chore: refresh profile cards [skip ci]"
+            git push
+          fi
