@@ -298,7 +298,6 @@ Modules included Artificial Intelligence and Data Science (79), Business Data An
 **Languages**<br>
 English (IELTS 7.0, CEFR C1) · Urdu (native) · German (A1.2)
 
-Currently working as a Quality Control Assistant at Myton Food Group (Morrisons), Bradford, while pursuing AI/ML roles and PhD applications.
 
 ---
 
