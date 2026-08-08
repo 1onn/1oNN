@@ -292,8 +292,6 @@ Modules included Artificial Intelligence and Data Science (79), Business Data An
 
 **Full-time AI/ML engineering and research roles — available now.** Also applying for **PhD and postdoc positions**, including MSCA-eligible programmes in the EU, for start dates from October 2026.
 
-🇬🇧 Right to work in the UK on the Graduate Route to **December 2027** — no sponsorship required.
-
 **Research interests**<br>
 `graph-augmented retrieval` · `LLM faithfulness evaluation` · `systems optimisation for high-throughput ML pipelines` · `interpretable clinical modelling`
 
