@@ -27,7 +27,7 @@ I build **retrieval systems that pair vector embeddings with knowledge graphs**,
 - 📄 First-author and corresponding-author on a **peer-reviewed Springer publication** (ICSMAI 2024, Morocco).
 - ⚙️ Shipped an AI voice-agent platform that handled **2,100+ outbound calls** and cut mean call latency **54%** (2.4s → 1.1s).
 - 🧪 Benchmarked **11 classifiers over 253,680 CDC BRFSS records** for diabetes risk, with resampling correctly confined to training folds.
-- 🎯 Currently open to **AI/ML engineering and research roles**, and applying for **PhD / postdoc positions** (including MSCA-eligible programmes) for October 2026 starts.
+- 🎯 Currently open to **AI/ML engineering and research roles**
 
 ---
 
@@ -288,9 +288,6 @@ Modules included Artificial Intelligence and Data Science (79), Business Data An
 
 ---
 
-## Open to
-
-**Full-time AI/ML engineering and research roles, available now.** Also applying for **PhD and postdoc positions**, including MSCA-eligible programmes in the EU, for start dates from October 2026.
 
 **Research interests**<br>
 `graph-augmented retrieval` · `LLM faithfulness evaluation` · `systems optimisation for high-throughput ML pipelines` · `interpretable clinical modelling`
