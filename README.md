@@ -37,7 +37,7 @@ I build **retrieval systems that pair vector embeddings with knowledge graphs**,
 <tr>
 <td width="50%" valign="top">
 
-### 🏛️ [finlaw-uk](https://github.com/1oNN/finlaw-uk)
+### 🏛️ [Finlaw-UK](https://github.com/1oNN/finlaw-uk)
 **Graph-augmented RAG over UK financial regulation**
 
 [![Stars](https://img.shields.io/github/stars/1oNN/finlaw-uk?style=flat-square&labelColor=1a1a1a&color=6C8EBF)](https://github.com/1oNN/finlaw-uk/stargazers)
