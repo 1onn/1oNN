@@ -13,33 +13,33 @@
   <clipPath id="bar"><rect x="24" y="56" width="412" height="10" rx="5.0"/></clipPath>
   <rect x="24" y="56" width="412" height="10" rx="5.0" fill="#21262d"/>
   <g clip-path="url(#bar)">
-    <rect x="24.00" y="56" width="169.38" height="10" fill="#3178c6"/>
-    <rect x="193.38" y="56" width="121.79" height="10" fill="#3572A5"/>
-    <rect x="315.17" y="56" width="57.14" height="10" fill="#f1e05a"/>
-    <rect x="372.31" y="56" width="48.73" height="10" fill="#DA5B0B"/>
-    <rect x="421.04" y="56" width="10.86" height="10" fill="#563d7c"/>
-    <rect x="431.89" y="56" width="2.75" height="10" fill="#e34c26"/>
-    <rect x="434.64" y="56" width="1.34" height="10" fill="#384d54"/>
+    <rect x="24.00" y="56" width="166.52" height="10" fill="#3178c6"/>
+    <rect x="190.52" y="56" width="127.60" height="10" fill="#3572A5"/>
+    <rect x="318.12" y="56" width="54.27" height="10" fill="#f1e05a"/>
+    <rect x="372.39" y="56" width="46.41" height="10" fill="#DA5B0B"/>
+    <rect x="418.80" y="56" width="13.48" height="10" fill="#563d7c"/>
+    <rect x="432.28" y="56" width="2.43" height="10" fill="#e34c26"/>
+    <rect x="434.71" y="56" width="1.27" height="10" fill="#384d54"/>
     <rect x="435.98" y="56" width="0.02" height="10" fill="#a91e50"/>
   </g>
   <circle cx="29" cy="96" r="5" fill="#3178c6"/>
   <text x="42" y="100" class="t lang">TypeScript</text>
-  <text x="220" y="100" text-anchor="end" class="t pct">41.1%</text>
+  <text x="220" y="100" text-anchor="end" class="t pct">40.4%</text>
   <circle cx="249" cy="96" r="5" fill="#3572A5"/>
   <text x="262" y="100" class="t lang">Python</text>
-  <text x="440" y="100" text-anchor="end" class="t pct">29.6%</text>
+  <text x="440" y="100" text-anchor="end" class="t pct">31.0%</text>
   <circle cx="29" cy="120" r="5" fill="#f1e05a"/>
   <text x="42" y="124" class="t lang">JavaScript</text>
-  <text x="220" y="124" text-anchor="end" class="t pct">13.9%</text>
+  <text x="220" y="124" text-anchor="end" class="t pct">13.2%</text>
   <circle cx="249" cy="120" r="5" fill="#DA5B0B"/>
   <text x="262" y="124" class="t lang">Jupyter Notebook</text>
-  <text x="440" y="124" text-anchor="end" class="t pct">11.8%</text>
+  <text x="440" y="124" text-anchor="end" class="t pct">11.3%</text>
   <circle cx="29" cy="144" r="5" fill="#563d7c"/>
   <text x="42" y="148" class="t lang">CSS</text>
-  <text x="220" y="148" text-anchor="end" class="t pct">2.6%</text>
+  <text x="220" y="148" text-anchor="end" class="t pct">3.3%</text>
   <circle cx="249" cy="144" r="5" fill="#e34c26"/>
   <text x="262" y="148" class="t lang">HTML</text>
-  <text x="440" y="148" text-anchor="end" class="t pct">0.7%</text>
+  <text x="440" y="148" text-anchor="end" class="t pct">0.6%</text>
   <circle cx="29" cy="168" r="5" fill="#384d54"/>
   <text x="42" y="172" class="t lang">Dockerfile</text>
   <text x="220" y="172" text-anchor="end" class="t pct">0.3%</text>
