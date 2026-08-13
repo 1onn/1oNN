@@ -58,11 +58,11 @@ Hybrid BM25 + BGE-small retrieval with reciprocal rank fusion, Mistral 7B-Instru
 </td>
 <td width="50%" valign="top">
 
-### 🩺 [diabetes-app](https://github.com/1oNN/diabetes-app)
+### 🩺 [DiabetesSense](https://github.com/1oNN/DiabetesSense)
 **11-classifier benchmark + screening tool**
 
-[![Stars](https://img.shields.io/github/stars/1oNN/diabetes-app?style=flat-square&labelColor=1a1a1a&color=6C8EBF)](https://github.com/1oNN/diabetes-app/stargazers)
-[![Last commit](https://img.shields.io/github/last-commit/1oNN/diabetes-app?style=flat-square&labelColor=1a1a1a&color=6C8EBF)](https://github.com/1oNN/diabetes-app/commits)
+[![Stars](https://img.shields.io/github/stars/1oNN/DiabetesSense?style=flat-square&labelColor=1a1a1a&color=6C8EBF)](https://github.com/1oNN/DiabetesSense/stargazers)
+[![Last commit](https://img.shields.io/github/last-commit/1oNN/DiabetesSense?style=flat-square&labelColor=1a1a1a&color=6C8EBF)](https://github.com/1oNN/DiabetesSense/commits)
 
 Diabetes risk on CDC BRFSS 2015, comparing random over-sampling, SMOTE and ADASYN with resampling confined to the training folds. Shipped as a lab-free, 19-question screening app.
 
