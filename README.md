@@ -1,15 +1,15 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=26&duration=3200&pause=900&color=6C8EBF&center=true&vCenter=true&width=760&lines=Hi%2C+I'm+Hammad+Ahmad;AI+%2F+Machine+Learning+Engineer;LLMs+%C2%B7+RAG+%C2%B7+Knowledge+Graphs;I+build+retrieval+systems+that+cite+their+sources" alt="AI / Machine Learning Engineer — LLMs, RAG, Knowledge Graphs" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=26&duration=3200&pause=900&color=6C8EBF&center=true&vCenter=true&width=760&lines=Hi%2C+I'm+Hammad+Ahmad;AI+%2F+Machine+Learning+Engineer;LLMs+%C2%B7+RAG+%C2%B7+Knowledge+Graphs;I+build+retrieval+systems+that+cite+their+sources" alt="AI / Machine Learning Engineer: LLMs, RAG, Knowledge Graphs" />
 
 **MSc Applied Artificial Intelligence & Data Analytics (Merit)** · University of Bradford<br>
-Bradford, UK — open to relocation
+Bradford, UK · open to relocation
 
 <br>
 
 <a href="https://hammadahmad.co.uk"><img src="https://img.shields.io/badge/Portfolio-hammadahmad.co.uk-1a1a1a?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" /></a>
 <a href="https://hammadahmad.co.uk/projects"><img src="https://img.shields.io/badge/Case%20studies-Read-6C8EBF?style=for-the-badge" alt="Case studies" /></a>
-<a href="https://jobzyl.com"><img src="https://img.shields.io/badge/Jobzyl-Live-3FCF8E?style=for-the-badge" alt="Jobzyl — live" /></a>
+<a href="https://jobzyl.com"><img src="https://img.shields.io/badge/Jobzyl-Live-3FCF8E?style=for-the-badge" alt="Jobzyl, live" /></a>
 <a href="https://www.linkedin.com/in/hammadahmad123"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 <a href="mailto:hammadahmad.ml@gmail.com"><img src="https://img.shields.io/badge/Email-Say%20hello-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
 <a href="https://orcid.org/0009-0000-7873-4977"><img src="https://img.shields.io/badge/ORCID-0009--0000--7873--4977-A6CE39?style=for-the-badge&logo=orcid&logoColor=white" alt="ORCID" /></a>
@@ -21,7 +21,7 @@ Bradford, UK — open to relocation
 
 ## About
 
-I build **retrieval systems that pair vector embeddings with knowledge graphs**, benchmark predictive models on large real-world datasets, and take both to production — retrieval design, backend APIs, deployment.
+I build **retrieval systems that pair vector embeddings with knowledge graphs**, benchmark predictive models on large real-world datasets, and take both to production: retrieval design, backend APIs, deployment.
 
 - 🔬 Most recent research: **FinLaw-UK**, a graph-augmented RAG system over UK financial regulation where every citation is verified against a Neo4j knowledge graph before it reaches the user.
 - 📄 First-author and corresponding-author on a **peer-reviewed Springer publication** (ICSMAI 2024, Morocco).
@@ -43,7 +43,7 @@ I build **retrieval systems that pair vector embeddings with knowledge graphs**,
 [![Stars](https://img.shields.io/github/stars/1oNN/finlaw-uk?style=flat-square&labelColor=1a1a1a&color=6C8EBF)](https://github.com/1oNN/finlaw-uk/stargazers)
 [![Last commit](https://img.shields.io/github/last-commit/1oNN/finlaw-uk?style=flat-square&labelColor=1a1a1a&color=6C8EBF)](https://github.com/1oNN/finlaw-uk/commits)
 
-Hybrid BM25 + BGE-small retrieval with reciprocal rank fusion, Mistral 7B-Instruct served locally via Ollama, and a Neo4j knowledge graph that verifies every citation — provisions absent from the graph are flagged as potential hallucinations.
+Hybrid BM25 + BGE-small retrieval with reciprocal rank fusion, Mistral 7B-Instruct served locally via Ollama, and a Neo4j knowledge graph that verifies every citation: provisions absent from the graph are flagged as potential hallucinations.
 
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Neo4j](https://img.shields.io/badge/-Neo4j-4581C3?style=flat-square&logo=neo4j&logoColor=white)
@@ -87,7 +87,7 @@ Random Forest best on ROC-AUC and sensitivity<br>
 [![Stars](https://img.shields.io/github/stars/1oNN/VoiceFlow?style=flat-square&labelColor=1a1a1a&color=6C8EBF)](https://github.com/1oNN/VoiceFlow/stargazers)
 [![Last commit](https://img.shields.io/github/last-commit/1oNN/VoiceFlow?style=flat-square&labelColor=1a1a1a&color=6C8EBF)](https://github.com/1oNN/VoiceFlow/commits)
 
-Retell call exporter with **local** Whisper transcription (large-v3) — call audio never crosses another trust boundary.
+Retell call exporter with **local** Whisper transcription (large-v3): call audio never crosses another trust boundary.
 
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Whisper](https://img.shields.io/badge/-Whisper-412991?style=flat-square&logo=openai&logoColor=white)
@@ -119,7 +119,7 @@ Random Forest `R² 0.8569` (MSE 0.0027)<br>
 <tr>
 <td colspan="2" valign="top">
 
-### 🔎 Jobzyl — [jobzyl.com](https://jobzyl.com)
+### 🔎 Jobzyl · [jobzyl.com](https://jobzyl.com)
 
 **Job-search aggregator** · 20 live boards across 60+ countries, searched in parallel and streamed over SSE. First results in **~1.4s**, backed by 11 RLS-locked Supabase tables.
 
@@ -146,11 +146,11 @@ Random Forest `R² 0.8569` (MSE 0.0027)<br>
 > **Ahmad, H.** *(first & corresponding author)*, Khan, M.U., Azam, M. (2024).<br>
 > **Comparative Analysis of Machine Learning Methods for Enhancing Sleep Efficiency and Prediction.**<br>
 > In: Serrhini, M., Ghoumid, K. (eds) *Advances in Smart Medical, IoT & Artificial Intelligence*, ICSMAI 2024.<br>
-> Information Systems Engineering and Management, vol 12, pp. 3–15. Springer, Cham.<br>
-> Presented at ICSMAI 2024, Saidia, Morocco, 18–20 April 2024.<br>
+> Information Systems Engineering and Management, vol 12, pp. 3-15. Springer, Cham.<br>
+> Presented at ICSMAI 2024, Saidia, Morocco, 18-20 April 2024.<br>
 > **DOI:** [10.1007/978-3-031-66854-8_1](https://doi.org/10.1007/978-3-031-66854-8_1)
 
-**Software & data release** — the FinLaw-UK implementation and a 110-item UK financial-regulation QA benchmark (factual questions, document tasks and case scenarios) are open at [github.com/1oNN/finlaw-uk](https://github.com/1oNN/finlaw-uk).
+**Software & data release:** the FinLaw-UK implementation and a 110-item UK financial-regulation QA benchmark (factual questions, document tasks and case scenarios) are open at [github.com/1oNN/finlaw-uk](https://github.com/1oNN/finlaw-uk).
 
 ---
 
@@ -200,7 +200,7 @@ Random Forest `R² 0.8569` (MSE 0.0027)<br>
 
 <div align="center">
 
-<!-- Generated daily by .github/workflows/metrics.yml — served from this repo, so it can't rate-limit -->
+<!-- Generated daily by .github/workflows/metrics.yml; served from this repo, so it can't rate-limit -->
 <img src="https://raw.githubusercontent.com/1oNN/1oNN/main/metrics.svg" alt="GitHub metrics" width="47%" />
 <img src="https://raw.githubusercontent.com/1oNN/1oNN/main/metrics.languages.svg" alt="Most used languages" width="47%" />
 
@@ -225,7 +225,7 @@ Random Forest `R² 0.8569` (MSE 0.0027)<br>
 ## Experience
 
 <details open>
-<summary><b>AI / Machine Learning Engineer</b> — Outlyst · Oct 2025 – Mar 2026 · Leeds, UK / Remote</summary>
+<summary><b>AI / Machine Learning Engineer</b> · Outlyst · Oct 2025 - Mar 2026 · Leeds, UK / Remote</summary>
 
 <br>
 
@@ -238,26 +238,26 @@ Random Forest `R² 0.8569` (MSE 0.0027)<br>
 </details>
 
 <details>
-<summary><b>Research Assistant, Machine Learning & LLMs</b> — University of Bradford · Jan 2025 – Sep 2025</summary>
+<summary><b>Research Assistant, Machine Learning & LLMs</b> · University of Bradford · Jan 2025 - Sep 2025</summary>
 
 <br>
 
 Designed and evaluated **FinLaw-UK**, also my MSc dissertation project: Mistral 7B served locally via Ollama, paired with a Neo4j knowledge graph, over the FCA Handbook, PRA Rulebook, FRC standards and statutory sources.
 
-- Engineered the retrieval pipeline — clause-level segmentation, Sentence Transformer embeddings, cross-encoder re-ranking, graph-grounded citation verification
+- Engineered the retrieval pipeline: clause-level segmentation, Sentence Transformer embeddings, cross-encoder re-ranking, graph-grounded citation verification
 - Built the evaluation harness, extending RAGAS with custom citation-precision and legal-completeness metrics
 - Supervised by Dr Tillal Eldabi and Dr Irfan Mehmood
 
 </details>
 
 <details>
-<summary><b>Research Assistant, Data Science</b> — COMSATS University Islamabad · Jul 2023 – Jul 2024</summary>
+<summary><b>Research Assistant, Data Science</b> · COMSATS University Islamabad · Jul 2023 - Jul 2024</summary>
 
 <br>
 
 Benchmarked **11 classifiers** for diabetes risk on 253,680 CDC BRFSS records, correcting the 86/14 class imbalance with random over-sampling after comparing it against SMOTE and ADASYN, with resampling confined to the training folds.
 
-- Analysed 20+ demographic, lifestyle and clinical indicators — age, general health, BMI, blood pressure and income emerged as the strongest correlates
+- Analysed 20+ demographic, lifestyle and clinical indicators: age, general health, BMI, blood pressure and income emerged as the strongest correlates
 - Deployed the winning model behind a REST API with SHAP-based interpretability
 
 </details>
@@ -267,7 +267,7 @@ Benchmarked **11 classifiers** for diabetes risk on 253,680 CDC BRFSS records, c
 ## Education
 
 <details>
-<summary><b>MSc, Applied Artificial Intelligence & Data Analytics (Merit)</b> — University of Bradford · 2024–2025</summary>
+<summary><b>MSc, Applied Artificial Intelligence & Data Analytics (Merit)</b> · University of Bradford · 2024-2025</summary>
 
 <br>
 
@@ -278,11 +278,11 @@ Modules included Artificial Intelligence and Data Science (79), Business Data An
 </details>
 
 <details>
-<summary><b>BS, Bioinformatics</b> — COMSATS University Islamabad · 2020–2024</summary>
+<summary><b>BS, Bioinformatics</b> · COMSATS University Islamabad · 2020-2024</summary>
 
 <br>
 
-**Thesis:** *AI-Assisted Analysis and Prediction of At-Risk Diabetic Individuals* — graded A.
+**Thesis:** *AI-Assisted Analysis and Prediction of At-Risk Diabetic Individuals*, graded A.
 
 </details>
 
@@ -290,7 +290,7 @@ Modules included Artificial Intelligence and Data Science (79), Business Data An
 
 ## Open to
 
-**Full-time AI/ML engineering and research roles — available now.** Also applying for **PhD and postdoc positions**, including MSCA-eligible programmes in the EU, for start dates from October 2026.
+**Full-time AI/ML engineering and research roles, available now.** Also applying for **PhD and postdoc positions**, including MSCA-eligible programmes in the EU, for start dates from October 2026.
 
 **Research interests**<br>
 `graph-augmented retrieval` · `LLM faithfulness evaluation` · `systems optimisation for high-throughput ML pipelines` · `interpretable clinical modelling`
@@ -305,7 +305,7 @@ English (IELTS 7.0, CEFR C1) · Urdu (native) · German (A1.2)
 
 ### Let's talk
 
-If you're working on retrieval, evaluation, or anything where a model needs to show its sources — I'd like to hear about it.
+If you're working on retrieval, evaluation, or anything where a model needs to show its sources, I'd like to hear about it.
 
 <a href="mailto:hammadahmad.ml@gmail.com"><img src="https://img.shields.io/badge/hammadahmad.ml@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
 <a href="https://www.linkedin.com/in/hammadahmad123"><img src="https://img.shields.io/badge/in/hammadahmad123-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
