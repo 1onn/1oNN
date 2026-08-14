@@ -200,15 +200,15 @@ Random Forest `R² 0.8569` (MSE 0.0027)<br>
 
 <div align="center">
 
-<!-- Generated daily by .github/workflows/metrics.yml; served from this repo, so it can't rate-limit -->
+<!-- Generated daily by .github/workflows/cards.yml; served from this repo, so it can't rate-limit -->
 <img src="https://raw.githubusercontent.com/1oNN/1oNN/main/metrics.svg" alt="GitHub metrics" width="47%" />
 <img src="https://raw.githubusercontent.com/1oNN/1oNN/main/metrics.languages.svg" alt="Most used languages" width="47%" />
 
 <br>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=1oNN&hide_border=true&theme=github-dark-blue" />
-  <img src="https://streak-stats.demolab.com?user=1oNN&hide_border=true&theme=graywhite" alt="Contribution streak" height="165" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/1oNN/1oNN/main/streak-dark.svg" />
+  <img src="https://raw.githubusercontent.com/1oNN/1oNN/main/streak.svg" alt="Contribution streak" width="47%" />
 </picture>
 
 <br><br>

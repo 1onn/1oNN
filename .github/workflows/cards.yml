@@ -1,7 +1,7 @@
 # Save this at: .github/workflows/cards.yml  (in the 1oNN/1oNN repo)
 #
-# Regenerates the four profile card SVGs and commits them into this repo.
-# NO personal access token required — it uses the automatic GITHUB_TOKEN that
+# Regenerates the six profile card SVGs and commits them into this repo.
+# NO personal access token required, it uses the automatic GITHUB_TOKEN that
 # GitHub injects into every workflow run. Nothing to create, nothing to paste.
 
 name: Profile cards
@@ -33,9 +33,10 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add metrics.svg metrics-dark.svg \
-                  metrics.languages.svg metrics.languages-dark.svg
+                  metrics.languages.svg metrics.languages-dark.svg \
+                  streak.svg streak-dark.svg
           if git diff --staged --quiet; then
-            echo "Stats unchanged — nothing to commit."
+            echo "Stats unchanged, nothing to commit."
           else
             git commit -m "chore: refresh profile cards [skip ci]"
             git push

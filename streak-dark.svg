@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="495" height="195" viewBox="0 0 495 195" role="img" aria-label="Contribution streak">
+  <style>
+    .t { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; }
+    .title { font-size:14px; font-weight:600; fill:#6C8EBF; }
+    .big { font-size:26px; font-weight:700; fill:#e6edf3; }
+    .lbl { font-size:11px; font-weight:500; fill:#8b949e; letter-spacing:.3px; }
+    .lang { font-size:12px; font-weight:500; fill:#e6edf3; }
+    .pct { font-size:12px; font-weight:400; fill:#8b949e; }
+    .date { font-size:10px; font-weight:400; fill:#8b949e; }
+    .accent { fill:#6C8EBF; }
+  </style>
+  <rect x="0.5" y="0.5" width="494" height="194" rx="8"
+        fill="#0d1117" stroke="#30363d"/>
+  <text x="24" y="34" class="t title">Contribution streak</text>
+  <text x="98.5" y="100" text-anchor="middle" class="t big">785</text>
+  <text x="98.5" y="124" text-anchor="middle" class="t lbl">TOTAL CONTRIBUTIONS</text>
+  <text x="98.5" y="146" text-anchor="middle" class="t date">Oct 21, 2021 - Aug 14, 2026</text>
+  <text x="247.5" y="100" text-anchor="middle" class="t big accent">2</text>
+  <text x="247.5" y="124" text-anchor="middle" class="t lbl">CURRENT STREAK</text>
+  <text x="247.5" y="146" text-anchor="middle" class="t date">Aug 13, 2026 - Aug 14, 2026</text>
+  <text x="396.5" y="100" text-anchor="middle" class="t big">19</text>
+  <text x="396.5" y="124" text-anchor="middle" class="t lbl">LONGEST STREAK</text>
+  <text x="396.5" y="146" text-anchor="middle" class="t date">May 2, 2026 - May 20, 2026</text>
+  <line x1="173.0" y1="70" x2="173.0" y2="160" stroke="#30363d"/>
+  <line x1="322.0" y1="70" x2="322.0" y2="160" stroke="#30363d"/>
+</svg>

@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 """
-Generates GitHub profile stat cards as SVG — no personal access token needed.
+Generates GitHub profile stat cards as SVG, no personal access token needed.
 
 Runs inside GitHub Actions using the built-in GITHUB_TOKEN, which is enough
 because every endpoint used here reads PUBLIC data only.
 
-Outputs four files (light + dark for each card):
+Outputs six files (light + dark for each card):
     metrics.svg              metrics-dark.svg
     metrics.languages.svg    metrics.languages-dark.svg
+    streak.svg               streak-dark.svg
 """
 
 import json
@@ -15,6 +16,7 @@ import os
 import sys
 import urllib.request
 import urllib.error
+from datetime import datetime, timedelta, timezone
 from xml.sax.saxutils import escape
 
 USER = os.environ.get("GH_USER", "1oNN")
@@ -60,6 +62,115 @@ def api(path):
         return json.loads(r.read().decode())
 
 
+GRAPHQL = "https://api.github.com/graphql"
+
+CALENDAR_QUERY = """
+query($user:String!, $from:DateTime!, $to:DateTime!) {
+  user(login:$user) {
+    contributionsCollection(from:$from, to:$to) {
+      contributionCalendar {
+        weeks { contributionDays { date contributionCount } }
+      }
+    }
+  }
+}
+"""
+
+
+def graphql(query, variables):
+    body = json.dumps({"query": query, "variables": variables}).encode()
+    req = urllib.request.Request(GRAPHQL, data=body, method="POST")
+    req.add_header("Content-Type", "application/json")
+    req.add_header("User-Agent", "profile-cards")
+    if TOKEN:
+        req.add_header("Authorization", f"Bearer {TOKEN}")
+    with urllib.request.urlopen(req, timeout=30) as r:
+        payload = json.loads(r.read().decode())
+    if payload.get("errors"):
+        raise RuntimeError(payload["errors"][0].get("message", "graphql error"))
+    return payload["data"]
+
+
+def contribution_days(created_at):
+    """Merge every year's calendar into one {date: count} map.
+
+    contributionsCollection caps each query at one year, so walk year by year
+    from signup. Weeks straddle year boundaries, hence the dict rather than a
+    running total: duplicated days collapse instead of counting twice.
+    """
+    start = datetime.strptime(created_at, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
+    today = datetime.now(timezone.utc)
+    days = {}
+
+    for year in range(start.year, today.year + 1):
+        frm = max(start, datetime(year, 1, 1, tzinfo=timezone.utc))
+        to = min(today, datetime(year, 12, 31, 23, 59, 59, tzinfo=timezone.utc))
+        if frm > to:
+            continue
+        data = graphql(CALENDAR_QUERY, {
+            "user": USER,
+            "from": frm.strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "to": to.strftime("%Y-%m-%dT%H:%M:%SZ"),
+        })
+        weeks = data["user"]["contributionsCollection"]["contributionCalendar"]["weeks"]
+        for week in weeks:
+            for day in week["contributionDays"]:
+                days[day["date"]] = day["contributionCount"]
+
+    cutoff = today.strftime("%Y-%m-%d")
+    days = {d: c for d, c in days.items() if d <= cutoff}
+    if not days:
+        # Better to fail the run and keep yesterday's committed card than to
+        # publish a card full of zeroes because the token lost calendar access.
+        raise RuntimeError("contribution calendar came back empty")
+    return days
+
+
+def streaks(days):
+    if not days:
+        return dict(total=0, current=0, current_from="", current_to="",
+                    longest=0, longest_from="", longest_to="", first="")
+
+    dates = sorted(days)
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+
+    longest = run = 0
+    longest_from = longest_to = run_from = ""
+    for d in dates:
+        if days[d] > 0:
+            run = run + 1 if run else 1
+            if run == 1:
+                run_from = d
+            if run > longest:
+                longest, longest_from, longest_to = run, run_from, d
+        else:
+            run = 0
+
+    # A quiet today does not break the streak yet, so start counting at
+    # yesterday in that case. Two quiet days in a row and it is over.
+    cursor = datetime.strptime(today, "%Y-%m-%d").replace(tzinfo=timezone.utc)
+    if days.get(today, 0) == 0:
+        cursor -= timedelta(days=1)
+
+    current = 0
+    current_to = cursor.strftime("%Y-%m-%d")
+    while days.get(cursor.strftime("%Y-%m-%d"), 0) > 0:
+        current += 1
+        cursor -= timedelta(days=1)
+    current_from = (cursor + timedelta(days=1)).strftime("%Y-%m-%d") if current else ""
+
+    return dict(
+        total=sum(days.values()),
+        current=current,
+        current_from=current_from,
+        current_to=current_to if current else today,
+        longest=longest,
+        longest_from=longest_from,
+        longest_to=longest_to,
+        first=dates[0],
+    )
+
+
 def gather():
     user = api(f"/users/{USER}")
 
@@ -90,6 +201,7 @@ def gather():
         stars=stars,
         followers=user.get("followers", 0),
         langs=langs,
+        streak=streaks(contribution_days(user["created_at"])),
     )
 
 
@@ -99,6 +211,10 @@ def mock():
         langs={"Python": 812_000, "Jupyter Notebook": 402_000,
                "TypeScript": 233_000, "HTML": 96_000, "CSS": 61_000,
                "JavaScript": 40_000, "Dockerfile": 9_000, "Shell": 6_500},
+        streak=dict(total=1994, current=12, current_from="2026-08-03",
+                    current_to="2026-08-14", longest=48,
+                    longest_from="2025-02-11", longest_to="2025-03-30",
+                    first="2021-10-21"),
     )
 
 
@@ -113,6 +229,8 @@ def shell(w, h, t, title, body):
     .lbl {{ font-size:11px; font-weight:500; fill:{t['muted']}; letter-spacing:.3px; }}
     .lang {{ font-size:12px; font-weight:500; fill:{t['text']}; }}
     .pct {{ font-size:12px; font-weight:400; fill:{t['muted']}; }}
+    .date {{ font-size:10px; font-weight:400; fill:{t['muted']}; }}
+    .accent {{ fill:{ACCENT}; }}
   </style>
   <rect x="0.5" y="0.5" width="{w-1}" height="{h-1}" rx="8"
         fill="{t['bg']}" stroke="{t['border']}"/>
@@ -172,6 +290,51 @@ def card_languages(d, t):
     return shell(w, h, t, "Most used languages", "\n".join(out))
 
 
+MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+          "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+
+
+def pretty(iso):
+    # %-d is not portable to Windows, so build it by hand.
+    if not iso:
+        return ""
+    d = datetime.strptime(iso, "%Y-%m-%d")
+    return f"{MONTHS[d.month - 1]} {d.day}, {d.year}"
+
+
+def card_streak(d, t):
+    # Wider than the other cards: three date ranges need the room, and at 460
+    # the longest of them sits ~5px off the divider rules.
+    w, h = 495, 195
+    s = d["streak"]
+
+    span = f"{pretty(s['first'])} - {pretty(s['current_to'])}" if s["first"] else ""
+    cur = f"{pretty(s['current_from'])} - {pretty(s['current_to'])}" if s["current"] else pretty(s["current_to"])
+    lng = f"{pretty(s['longest_from'])} - {pretty(s['longest_to'])}" if s["longest"] else ""
+
+    cells = [
+        (f"{s['total']:,}", "TOTAL CONTRIBUTIONS", span, False),
+        (f"{s['current']}", "CURRENT STREAK", cur, True),
+        (f"{s['longest']}", "LONGEST STREAK", lng, False),
+    ]
+
+    col = (w - 48) / 3
+    out = []
+    for i, (val, lab, sub, hot) in enumerate(cells):
+        cx = 24 + col * i + col / 2
+        klass = "t big accent" if hot else "t big"
+        out.append(f'  <text x="{cx:.1f}" y="{100}" text-anchor="middle" class="{klass}">{escape(val)}</text>')
+        out.append(f'  <text x="{cx:.1f}" y="{124}" text-anchor="middle" class="t lbl">{escape(lab)}</text>')
+        if sub:
+            out.append(f'  <text x="{cx:.1f}" y="{146}" text-anchor="middle" class="t date">{escape(sub)}</text>')
+
+    for i in (1, 2):
+        x = 24 + col * i
+        out.append(f'  <line x1="{x:.1f}" y1="70" x2="{x:.1f}" y2="160" stroke="{t["border"]}"/>')
+
+    return shell(w, h, t, "Contribution streak", "\n".join(out))
+
+
 def main():
     data = mock() if "--mock" in sys.argv else gather()
     outdir = sys.argv[sys.argv.index("--out") + 1] if "--out" in sys.argv else "."
@@ -181,6 +344,8 @@ def main():
         "metrics-dark.svg":          card_overview(data, THEMES["dark"]),
         "metrics.languages.svg":     card_languages(data, THEMES["light"]),
         "metrics.languages-dark.svg": card_languages(data, THEMES["dark"]),
+        "streak.svg":                card_streak(data, THEMES["light"]),
+        "streak-dark.svg":           card_streak(data, THEMES["dark"]),
     }
     for name, svg in files.items():
         with open(os.path.join(outdir, name), "w") as f:
