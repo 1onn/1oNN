@@ -23,11 +23,12 @@ Bradford, UK · open to relocation
 
 I build **retrieval systems that pair vector embeddings with knowledge graphs**, benchmark predictive models on large real-world datasets, and take both to production: retrieval design, backend APIs, deployment.
 
-- 🔬 Most recent research: **FinLaw-UK**, a graph-augmented RAG system over UK financial regulation where every citation is verified against a Neo4j knowledge graph before it reaches the user.
+- 🔬 Most recent research: **FinLaw-UK**, a graph-augmented RAG system over UK financial regulation where every citation is resolved against a Neo4j knowledge graph before it reaches the user, and the system refuses rather than answering when retrieval is weak.
+- 🧾 Re-measured my own dissertation evaluation post-submission, found two reported metrics were regex shape-checks rather than correctness measures, and **published the correction** alongside the code. The [measurement-integrity section](https://github.com/1oNN/finlaw-uk#measurement-integrity) is above the fold in the repo, not in an appendix.
 - 📄 First-author and corresponding-author on a **peer-reviewed Springer publication** (ICSMAI 2024, Morocco).
 - ⚙️ Shipped an AI voice-agent platform that handled **2,100+ outbound calls** and cut mean call latency **54%** (2.4s → 1.1s).
-- 🧪 Benchmarked **11 classifiers over 253,680 CDC BRFSS records** for diabetes risk, with resampling correctly confined to training folds.
-- 🎯 Currently open to **AI/ML engineering and Doctoral research roles**
+- 🧪 Benchmarked **11 classifiers over 253,680 CDC BRFSS records** for diabetes risk, with resampling confined to the training folds.
+- 🎯 Currently open to **AI/ML engineering roles and funded doctoral positions** in the UK and EU.
 
 ---
 
@@ -37,32 +38,35 @@ I build **retrieval systems that pair vector embeddings with knowledge graphs**,
 <tr>
 <td width="50%" valign="top">
 
-### 🏛️ [Finlaw-UK](https://github.com/1oNN/finlaw-uk)
+### 🏛️ [FinLaw-UK](https://github.com/1oNN/finlaw-uk)
 **Graph-augmented RAG over UK financial regulation**
 
 [![Stars](https://img.shields.io/github/stars/1oNN/finlaw-uk?style=flat-square&labelColor=1a1a1a&color=6C8EBF)](https://github.com/1oNN/finlaw-uk/stargazers)
 [![Last commit](https://img.shields.io/github/last-commit/1oNN/finlaw-uk?style=flat-square&labelColor=1a1a1a&color=6C8EBF)](https://github.com/1oNN/finlaw-uk/commits)
+[![License](https://img.shields.io/github/license/1oNN/finlaw-uk?style=flat-square&labelColor=1a1a1a&color=6C8EBF)](https://github.com/1oNN/finlaw-uk/blob/main/LICENSE)
 
-Hybrid BM25 + BGE-small retrieval with reciprocal rank fusion, Mistral 7B-Instruct served locally via Ollama, and a Neo4j knowledge graph that verifies every citation: provisions absent from the graph are flagged as potential hallucinations.
+Hybrid BM25 + BGE-small retrieval with reciprocal rank fusion, 2-hop Neo4j traversal, and Mistral 7B-Instruct served locally via Ollama. Every citation is resolved against the graph before the answer ships; provisions absent from it are flagged rather than passed through.
 
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Neo4j](https://img.shields.io/badge/-Neo4j-4581C3?style=flat-square&logo=neo4j&logoColor=white)
 ![Ollama](https://img.shields.io/badge/-Ollama-000000?style=flat-square&logo=ollama&logoColor=white)
-![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Flask](https://img.shields.io/badge/-Flask-000000?style=flat-square&logo=flask&logoColor=white)
 ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 
-`0.82` source accuracy · `0.81` citation quality<br>
-`0.76` RAGAS faithfulness · `0.74` answer relevance<br>
-*110-item benchmark · MSc dissertation*
+`0.68` legal completeness — the one figure stable across both evaluation tracks and both scoring implementations<br>
+`3/110` citations passing graph verification on the pre-verifier run, a *before* measurement<br>
+*110-item harness, 10 curated items · MSc dissertation*
+
+> Source accuracy and citation quality are **withdrawn**, not reported: the scorer awarded a flat `0.85` to any citation-shaped string. [Why, and what replaced them →](https://github.com/1oNN/finlaw-uk#measurement-integrity)
 
 </td>
 <td width="50%" valign="top">
 
-### 🩺 [DiabetesSense](https://github.com/1oNN/DiabetesSense)
+### 🩺 [DiabetesSense](https://github.com/1oNN/diabetes-app)
 **11-classifier benchmark + screening tool**
 
-[![Stars](https://img.shields.io/github/stars/1oNN/DiabetesSense?style=flat-square&labelColor=1a1a1a&color=6C8EBF)](https://github.com/1oNN/DiabetesSense/stargazers)
-[![Last commit](https://img.shields.io/github/last-commit/1oNN/DiabetesSense?style=flat-square&labelColor=1a1a1a&color=6C8EBF)](https://github.com/1oNN/DiabetesSense/commits)
+[![Stars](https://img.shields.io/github/stars/1oNN/diabetes-app?style=flat-square&labelColor=1a1a1a&color=6C8EBF)](https://github.com/1oNN/diabetes-app/stargazers)
+[![Last commit](https://img.shields.io/github/last-commit/1oNN/diabetes-app?style=flat-square&labelColor=1a1a1a&color=6C8EBF)](https://github.com/1oNN/diabetes-app/commits)
 
 Diabetes risk on CDC BRFSS 2015, comparing random over-sampling, SMOTE and ADASYN with resampling confined to the training folds. Shipped as a lab-free, 19-question screening app.
 
@@ -121,13 +125,16 @@ Random Forest `R² 0.8569` (MSE 0.0027)<br>
 
 ### 🔎 Jobzyl · [jobzyl.com](https://jobzyl.com)
 
-**Job-search aggregator** · 20 live boards across 60+ countries, searched in parallel and streamed over SSE. First results in **~1.4s**, backed by 11 RLS-locked Supabase tables.
+**Job-search aggregator, built and operated solo.** 20 providers — aggregators, national employment agencies and remote-first boards — queried in parallel behind a unified provider abstraction, with per-source timeout budgets and failure isolation so one slow board cannot block a response. First results streamed over SSE in **~1.4s**. Postgres-backed cache with server-side deduplication and salary normalisation to annual, across a 617K-posting index. Row-level security on every public-schema table; CV text Fernet-encrypted at rest with hard-delete flows.
 
 ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![Next.js](https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
-![Supabase](https://img.shields.io/badge/-Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white)
+![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![Vercel](https://img.shields.io/badge/-Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
+![Supabase](https://img.shields.io/badge/-Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white)
+![AWS](https://img.shields.io/badge/-AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
 
 </td>
 </tr>
@@ -150,7 +157,7 @@ Random Forest `R² 0.8569` (MSE 0.0027)<br>
 > Presented at ICSMAI 2024, Saidia, Morocco, 18-20 April 2024.<br>
 > **DOI:** [10.1007/978-3-031-66854-8_1](https://doi.org/10.1007/978-3-031-66854-8_1)
 
-**Software & data release:** the FinLaw-UK implementation and a 110-item UK financial-regulation QA benchmark (factual questions, document tasks and case scenarios) are open at [github.com/1oNN/finlaw-uk](https://github.com/1oNN/finlaw-uk).
+**Software & data release.** The FinLaw-UK implementation and its evaluation harness are open under MIT at [github.com/1oNN/finlaw-uk](https://github.com/1oNN/finlaw-uk): a 110-item UK financial-regulation QA structure spanning factual questions, document tasks and case scenarios, of which **10 items are fully curated with gold answers and required citations** and are the meaningful evaluation set. The remaining rows are template stubs and are documented as such in the repo's known limitations.
 
 ---
 
@@ -160,7 +167,7 @@ Random Forest `R² 0.8569` (MSE 0.0027)<br>
 
 **Machine learning & data**
 
-[![ML stack](https://skillicons.dev/icons?i=pytorch,tensorflow,sklearn,opencv,py,r&perline=6)](https://skillicons.dev)
+[![ML stack](https://skillicons.dev/icons?i=pytorch,sklearn,py&perline=6)](https://skillicons.dev)
 
 ![XGBoost](https://img.shields.io/badge/XGBoost-1B7A3D?style=flat-square)
 ![LightGBM](https://img.shields.io/badge/LightGBM-2C6E49?style=flat-square)
@@ -177,6 +184,7 @@ Random Forest `R² 0.8569` (MSE 0.0027)<br>
 ![Hybrid retrieval](https://img.shields.io/badge/BM25%20%2B%20Dense-6C8EBF?style=flat-square)
 ![Cross-encoder](https://img.shields.io/badge/Cross--encoder%20re--ranking-6C8EBF?style=flat-square)
 ![RAGAS](https://img.shields.io/badge/RAGAS-6C8EBF?style=flat-square)
+![FAISS](https://img.shields.io/badge/FAISS-6C8EBF?style=flat-square)
 ![Neo4j](https://img.shields.io/badge/Neo4j-4581C3?style=flat-square&logo=neo4j&logoColor=white)
 ![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white)
 
@@ -184,13 +192,13 @@ Random Forest `R² 0.8569` (MSE 0.0027)<br>
 
 **Engineering**
 
-[![Engineering stack](https://skillicons.dev/icons?i=py,cpp,ts,fastapi,flask,react,nextjs,nodejs&perline=8)](https://skillicons.dev)
+[![Engineering stack](https://skillicons.dev/icons?i=py,ts,js,fastapi,flask,react,nextjs,nodejs&perline=8)](https://skillicons.dev)
 
 <br>
 
 **Data & infrastructure**
 
-[![Infra stack](https://skillicons.dev/icons?i=postgres,docker,githubactions,aws,gcp,linux,git,supabase&perline=8)](https://skillicons.dev)
+[![Infra stack](https://skillicons.dev/icons?i=postgres,supabase,docker,githubactions,aws,linux,git&perline=8)](https://skillicons.dev)
 
 </div>
 
@@ -211,13 +219,6 @@ Random Forest `R² 0.8569` (MSE 0.0027)<br>
   <img src="https://raw.githubusercontent.com/1oNN/1oNN/main/streak.svg" alt="Contribution streak" width="47%" />
 </picture>
 
-<br><br>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/1oNN/1oNN/output/github-snake-dark.svg" />
-  <img src="https://raw.githubusercontent.com/1oNN/1oNN/output/github-snake.svg" alt="Contribution graph" />
-</picture>
-
 </div>
 
 ---
@@ -225,6 +226,20 @@ Random Forest `R² 0.8569` (MSE 0.0027)<br>
 ## Experience
 
 <details open>
+<summary><b>Founder & Sole Engineer</b> · Jobzyl (self-employed) · May 2026 - Present · Remote</summary>
+
+<br>
+
+Designed, built and operate [jobzyl.com](https://jobzyl.com), a live job-aggregation platform serving a 617K-posting index.
+
+- Cache-first reads with live parallel fan-out to 20 providers on a miss, per-source timeout budgets and failure isolation so one slow board cannot block a response
+- Ingestion, expiry and staleness handling across sources; server-side deduplication, salary normalisation to annual, and a scheduled alerts pipeline
+- ATS-style CV matching with keyword scoring kept browser-side; server-side AI features disclosed separately, CV text Fernet-encrypted at rest with hard-delete flows
+- Next.js, TypeScript, React, Python, FastAPI, PostgreSQL, self-hosted Supabase, AWS App Runner and Amplify
+
+</details>
+
+<details>
 <summary><b>AI / Machine Learning Engineer</b> · Outlyst · Oct 2025 - Mar 2026 · Leeds, UK / Remote</summary>
 
 <br>
@@ -238,27 +253,29 @@ Random Forest `R² 0.8569` (MSE 0.0027)<br>
 </details>
 
 <details>
-<summary><b>Research Assistant, Machine Learning & LLMs</b> · University of Bradford · Jan 2025 - Sep 2025</summary>
+<summary><b>MSc Research Project, Machine Learning & LLMs</b> · University of Bradford · Jan 2025 - Sep 2025</summary>
 
 <br>
 
-Designed and evaluated **FinLaw-UK**, also my MSc dissertation project: Mistral 7B served locally via Ollama, paired with a Neo4j knowledge graph, over the FCA Handbook, PRA Rulebook, FRC standards and statutory sources.
+Designed and evaluated **FinLaw-UK**, my MSc dissertation project: Mistral 7B served locally via Ollama, paired with a Neo4j knowledge graph, over the FCA Handbook, PRA Rulebook, FRC standards and statutory sources.
 
-- Engineered the retrieval pipeline: clause-level segmentation, Sentence Transformer embeddings, cross-encoder re-ranking, graph-grounded citation verification
-- Built the evaluation harness, extending RAGAS with custom citation-precision and legal-completeness metrics
+- Engineered the retrieval pipeline: clause-level segmentation, Sentence Transformer embeddings, BM25 + dense fusion by reciprocal rank fusion, cross-encoder re-ranking, and graph-grounded citation verification
+- Built the evaluation harness, extending RAGAS with a custom legal-completeness metric that reproduces at 0.68 across both evaluation tracks
+- Re-measured the submitted evaluation post-hoc, established that two reported metrics were format checks rather than correctness measures, and published the correction with the code
 - Supervised by Dr Tillal Eldabi and Dr Irfan Mehmood
 
 </details>
 
 <details>
-<summary><b>Research Assistant, Data Science</b> · COMSATS University Islamabad · Jul 2023 - Jul 2024</summary>
+<summary><b>Research Intern, Data Science</b> · COMSATS University Islamabad · Jul 2023 - Jul 2024</summary>
 
 <br>
 
-Benchmarked **11 classifiers** for diabetes risk on 253,680 CDC BRFSS records, correcting the 86/14 class imbalance with random over-sampling after comparing it against SMOTE and ADASYN, with resampling confined to the training folds.
+Benchmarked **11 classifiers** for diabetes risk on 253,680 CDC BRFSS records, comparing random over-sampling against SMOTE and ADASYN for the 86/14 class imbalance, with resampling confined to the training folds.
 
 - Analysed 20+ demographic, lifestyle and clinical indicators: age, general health, BMI, blood pressure and income emerged as the strongest correlates
 - Deployed the winning model behind a REST API with SHAP-based interpretability
+- Led the first-author comparative study of sleep-efficiency prediction published at ICSMAI 2024
 
 </details>
 
@@ -288,13 +305,14 @@ Modules included Artificial Intelligence and Data Science (79), Business Data An
 
 ---
 
-
 **Research interests**<br>
-`graph-augmented retrieval` · `LLM faithfulness evaluation` · `systems optimisation for high-throughput ML pipelines` · `interpretable clinical modelling`
+`graph-augmented retrieval` · `LLM faithfulness evaluation` · `evaluation methodology for RAG` · `interpretable clinical modelling`
 
 **Languages**<br>
 English (IELTS 7.0, CEFR C1) · Urdu (native) · German (A1.2)
 
+**Right to work**<br>
+UK Graduate visa to December 2027. Eligible to work now, no sponsorship required.
 
 ---
 
