@@ -206,8 +206,15 @@ Random Forest `R² 0.8569` (MSE 0.0027)<br>
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=1oNN&show_icons=true&bg_color=1a1a1a&title_color=6C8EBF&text_color=cfcfcf&icon_color=6C8EBF&hide_border=true" alt="GitHub metrics" width="47%" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=1oNN&layout=compact&bg_color=1a1a1a&title_color=6C8EBF&text_color=cfcfcf&hide_border=true" alt="Most used languages" width="47%" />
+<!-- Generated daily by .github/workflows/cards.yml; served from this repo so it can't rate-limit -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/1oNN/1oNN/main/metrics-dark.svg" />
+  <img src="https://raw.githubusercontent.com/1oNN/1oNN/main/metrics.svg" alt="GitHub metrics" width="47%" />
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/1oNN/1oNN/main/metrics.languages-dark.svg" />
+  <img src="https://raw.githubusercontent.com/1oNN/1oNN/main/metrics.languages.svg" alt="Most used languages" width="47%" />
+</picture>
 
 <br>
 
@@ -215,6 +222,7 @@ Random Forest `R² 0.8569` (MSE 0.0027)<br>
 
 <br><br>
 
+<!-- GitHub Contribution Snake -->
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/1oNN/1oNN/output/github-snake-dark.svg" />
   <img src="https://raw.githubusercontent.com/1oNN/1oNN/output/github-snake.svg" alt="Contribution graph" width="100%" />
