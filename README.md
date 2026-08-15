@@ -54,10 +54,7 @@ Hybrid BM25 + BGE-small retrieval with reciprocal rank fusion, 2-hop Neo4j trave
 ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 
 `0.68` legal completeness — the one figure stable across both evaluation tracks and both scoring implementations<br>
-`3/110` citations passing graph verification on the pre-verifier run, a *before* measurement<br>
 *110-item harness, 10 curated items · MSc dissertation*
-
-> Source accuracy and citation quality are **withdrawn**, not reported: the scorer awarded a flat `0.85` to any citation-shaped string. [Why, and what replaced them →](https://github.com/1oNN/finlaw-uk#measurement-integrity)
 
 </td>
 <td width="50%" valign="top">
