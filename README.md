@@ -205,15 +205,20 @@ Random Forest `R² 0.8569` (MSE 0.0027)<br>
 
 <div align="center">
 
-<!-- Generated daily by .github/workflows/cards.yml; served from this repo, so it can't rate-limit -->
-<img src="https://raw.githubusercontent.com/1oNN/1oNN/main/metrics.svg" alt="GitHub metrics" width="47%" />
-<img src="https://raw.githubusercontent.com/1oNN/1oNN/main/metrics.languages.svg" alt="Most used languages" width="47%" />
+<img src="https://github-readme-stats.vercel.app/api?username=1oNN&show_icons=true&bg_color=1a1a1a&title_color=6C8EBF&text_color=cfcfcf&icon_color=6C8EBF&hide_border=true" alt="GitHub metrics" width="47%" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=1oNN&layout=compact&bg_color=1a1a1a&title_color=6C8EBF&text_color=cfcfcf&hide_border=true" alt="Most used languages" width="47%" />
 
 <br>
 
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=1oNN&background=1a1a1a&ring=6C8EBF&fire=6C8EBF&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=6C8EBF&sideLabels=cfcfcf&dates=cfcfcf&hide_border=true" alt="Contribution streak" width="47%" />
+
+<br><br>
+
+<!-- GitHub Contribution Snake -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/1oNN/1oNN/main/streak-dark.svg" />
-  <img src="https://raw.githubusercontent.com/1oNN/1oNN/main/streak.svg" alt="Contribution streak" width="47%" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/1oNN/1oNN/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/1oNN/1oNN/output/github-contribution-grid-snake.svg" />
+  <img alt="GitHub Contribution Grid Snake" src="https://raw.githubusercontent.com/1oNN/1oNN/output/github-contribution-grid-snake.svg" width="100%" />
 </picture>
 
 </div>
