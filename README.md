@@ -53,7 +53,7 @@ Hybrid BM25 + BGE-small retrieval with reciprocal rank fusion, 2-hop Neo4j trave
 ![Flask](https://img.shields.io/badge/-Flask-000000?style=flat-square&logo=flask&logoColor=white)
 ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 
-`0.68` legal completeness — the one figure stable across both evaluation tracks and both scoring implementations<br>
+`0.76` RAGAS faithfulness, `0.74` answer relevance, and `0.68` legal completeness — the figures stable across both evaluation tracks and both scoring implementations.<br>
 *110-item harness, 10 curated items · MSc dissertation*
 
 </td>
