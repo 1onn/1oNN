@@ -50,6 +50,7 @@ Hybrid BM25 + BGE-small retrieval with reciprocal rank fusion, 2-hop Neo4j trave
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Neo4j](https://img.shields.io/badge/-Neo4j-4581C3?style=flat-square&logo=neo4j&logoColor=white)
 ![Ollama](https://img.shields.io/badge/-Ollama-000000?style=flat-square&logo=ollama&logoColor=white)
+![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
 ![Flask](https://img.shields.io/badge/-Flask-000000?style=flat-square&logo=flask&logoColor=white)
 ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 
@@ -214,11 +215,9 @@ Random Forest `R² 0.8569` (MSE 0.0027)<br>
 
 <br><br>
 
-<!-- GitHub Contribution Snake -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/1oNN/1oNN/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/1oNN/1oNN/output/github-contribution-grid-snake.svg" />
-  <img alt="GitHub Contribution Grid Snake" src="https://raw.githubusercontent.com/1oNN/1oNN/output/github-contribution-grid-snake.svg" width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/1oNN/1oNN/output/github-snake-dark.svg" />
+  <img src="https://raw.githubusercontent.com/1oNN/1oNN/output/github-snake.svg" alt="Contribution graph" width="100%" />
 </picture>
 
 </div>
