@@ -72,7 +72,6 @@ Diabetes risk on CDC BRFSS 2015, comparing random over-sampling, SMOTE and ADASY
 ![pandas](https://img.shields.io/badge/-pandas-150458?style=flat-square&logo=pandas&logoColor=white)
 ![Flask](https://img.shields.io/badge/-Flask-000000?style=flat-square&logo=flask&logoColor=white)
 ![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![SHAP](https://img.shields.io/badge/-SHAP-8B5CF6?style=flat-square)
 
 Random Forest best on ROC-AUC and sensitivity<br>
 `253,680` records · `14%` positive class<br>
