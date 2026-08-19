@@ -24,9 +24,9 @@ Bradford, UK · open to relocation
 I build **retrieval systems that pair vector embeddings with knowledge graphs**, benchmark predictive models on large real-world datasets, and take both to production: retrieval design, backend APIs, deployment.
 
 - 🔬 Most recent research: **FinLaw-UK**, a graph-augmented RAG system over UK financial regulation where every citation is resolved against a Neo4j knowledge graph before it reaches the user, and the system refuses rather than answering when retrieval is weak.
-- 🧾 Re-measured my own dissertation evaluation post-submission, found two reported metrics were regex shape-checks rather than correctness measures, and **published the correction** alongside the code. The [measurement-integrity section](https://github.com/1oNN/finlaw-uk#measurement-integrity) is above the fold in the repo, not in an appendix.
-- 📄 First-author and corresponding-author on a **peer-reviewed Springer publication** (ICSMAI 2024, Morocco).
+- 🧾 Re-measured my own evaluation pipeline post-submission, found two reported metrics were regex shape-checks rather than correctness measures, and **published the correction** alongside the true graph-verified rate. The [measurement-integrity section](https://github.com/1oNN/finlaw-uk#measurement-integrity) is above the fold in the repo, not in an appendix.
 - ⚙️ Shipped an AI voice-agent platform that handled **2,100+ outbound calls** and cut mean call latency **54%** (2.4s → 1.1s).
+- 📄 First-author and corresponding-author on a **peer-reviewed Springer publication** (ICSMAI 2024, Morocco).
 - 🧪 Benchmarked **11 classifiers over 253,680 CDC BRFSS records** for diabetes risk, with resampling confined to the training folds.
 - 🎯 Currently open to **AI/ML engineering roles and funded doctoral positions** in the UK and EU.
 
@@ -60,6 +60,28 @@ Hybrid BM25 + BGE-small retrieval with reciprocal rank fusion, 2-hop Neo4j trave
 </td>
 <td width="50%" valign="top">
 
+### 🎙️ [VoiceFlow](https://github.com/1oNN/VoiceFlow)
+**Secure Speech Transcription Pipeline**
+
+[![Stars](https://img.shields.io/github/stars/1oNN/VoiceFlow?style=flat-square&labelColor=1a1a1a&color=6C8EBF)](https://github.com/1oNN/VoiceFlow/stargazers)
+[![Last commit](https://img.shields.io/github/last-commit/1oNN/VoiceFlow?style=flat-square&labelColor=1a1a1a&color=6C8EBF)](https://github.com/1oNN/VoiceFlow/commits)
+
+Engineered a secure call-export pipeline for Retell AI outbound voice agents, ensuring zero-trust data privacy by transcribing sensitive customer recordings locally via an open-source Whisper large-v3 model.
+
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![PyTorch](https://img.shields.io/badge/-PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+![Whisper](https://img.shields.io/badge/-Whisper-412991?style=flat-square&logo=openai&logoColor=white)
+![Next.js](https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+
+Multi-threaded async fetching · Live SSE progress<br>
+*Processed 2,100+ production calls*
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
 ### 🩺 [DiabetesSense](https://github.com/1oNN/diabetes-app)
 **11-classifier benchmark + screening tool**
 
@@ -76,26 +98,6 @@ Diabetes risk on CDC BRFSS 2015, comparing random over-sampling, SMOTE and ADASY
 Random Forest best on ROC-AUC and sensitivity<br>
 `253,680` records · `14%` positive class<br>
 *Flask + React*
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 🎙️ [VoiceFlow](https://github.com/1oNN/VoiceFlow)
-**Privacy-first call transcription**
-
-[![Stars](https://img.shields.io/github/stars/1oNN/VoiceFlow?style=flat-square&labelColor=1a1a1a&color=6C8EBF)](https://github.com/1oNN/VoiceFlow/stargazers)
-[![Last commit](https://img.shields.io/github/last-commit/1oNN/VoiceFlow?style=flat-square&labelColor=1a1a1a&color=6C8EBF)](https://github.com/1oNN/VoiceFlow/commits)
-
-Retell call exporter with **local** Whisper transcription (large-v3): call audio never crosses another trust boundary.
-
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Whisper](https://img.shields.io/badge/-Whisper-412991?style=flat-square&logo=openai&logoColor=white)
-![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-
-Async jobs · live SSE progress<br>
-One-command Docker deploy
 
 </td>
 <td width="50%" valign="top">
@@ -122,7 +124,7 @@ Random Forest `R² 0.8569` (MSE 0.0027)<br>
 
 ### 🔎 Jobzyl · [jobzyl.com](https://jobzyl.com)
 
-**Job-search aggregator, built and operated solo.** 20 providers — aggregators, national employment agencies and remote-first boards — queried in parallel behind a unified provider abstraction, with per-source timeout budgets and failure isolation so one slow board cannot block a response. First results streamed over SSE in **~1.4s**. Postgres-backed cache with server-side deduplication and salary normalisation to annual, across a 617K-posting index. Row-level security on every public-schema table; CV text Fernet-encrypted at rest with hard-delete flows.
+**Live job-search aggregator, built and operated solo.** Queries 20+ boards (Indeed, Adzuna, Reed) with parallel fan-out on miss, per-source timeout isolation, and Server-Sent Events (SSE) streaming for sub-second search results. Includes an ATS-style CV matcher using in-browser parsing to keep user text strictly on-device, alongside server-side deduplication, Kanban-style application tracking, and automated email digest alerts. User CV text is Fernet-encrypted at rest with hard-delete flows.
 
 ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![Next.js](https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
@@ -234,16 +236,16 @@ Random Forest `R² 0.8569` (MSE 0.0027)<br>
 ## Experience
 
 <details open>
-<summary><b>Founder & Sole Engineer</b> · Jobzyl (self-employed) · May 2026 - Present · Remote</summary>
+<summary><b>Founder & Sole Engineer</b> · Jobzyl (self-employed) · Jun 2026 - Present · Remote</summary>
 
 <br>
 
-Designed, built and operate [jobzyl.com](https://jobzyl.com), a live job-aggregation platform serving a 617K-posting index.
+Designed, built and operate [jobzyl.com](https://jobzyl.com), a live job-aggregation platform querying 20+ boards.
 
-- Cache-first reads with live parallel fan-out to 20 providers on a miss, per-source timeout budgets and failure isolation so one slow board cannot block a response
-- Ingestion, expiry and staleness handling across sources; server-side deduplication, salary normalisation to annual, and a scheduled alerts pipeline
-- ATS-style CV matching with keyword scoring kept browser-side; server-side AI features disclosed separately, CV text Fernet-encrypted at rest with hard-delete flows
-- Next.js, TypeScript, React, Python, FastAPI, PostgreSQL, self-hosted Supabase, AWS App Runner and Amplify
+- Cache-first reads with live parallel fan-out on miss, per-source timeout isolation, and SSE streaming for sub-second search results
+- Implemented an ATS-style CV matcher using in-browser parsing to keep user text on-device (Fernet encrypted)
+- Server-side deduplication, Kanban-style application tracking, automated salary normalisation, and email digest alerts
+- Next.js, TypeScript, React, Python, FastAPI, PostgreSQL, Supabase, AWS
 
 </details>
 
@@ -261,11 +263,11 @@ Designed, built and operate [jobzyl.com](https://jobzyl.com), a live job-aggrega
 </details>
 
 <details>
-<summary><b>MSc Research Project, Machine Learning & LLMs</b> · University of Bradford · Jan 2025 - Sep 2025</summary>
+<summary><b>Research Assistant | Graph-Augmented LLM Engineering</b> · University of Bradford · Jan 2025 - Sep 2025</summary>
 
 <br>
 
-Designed and evaluated **FinLaw-UK**, my MSc dissertation project: Mistral 7B served locally via Ollama, paired with a Neo4j knowledge graph, over the FCA Handbook, PRA Rulebook, FRC standards and statutory sources.
+Designed and evaluated **FinLaw-UK**: Mistral 7B served locally via Ollama, paired with a Neo4j knowledge graph, over the FCA Handbook, PRA Rulebook, FRC standards and statutory sources.
 
 - Engineered the retrieval pipeline: clause-level segmentation, Sentence Transformer embeddings, BM25 + dense fusion by reciprocal rank fusion, cross-encoder re-ranking, and graph-grounded citation verification
 - Built the evaluation harness, extending RAGAS with a custom legal-completeness metric that reproduces at 0.68 across both evaluation tracks
