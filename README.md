@@ -124,7 +124,7 @@ Random Forest `R² 0.8569` (MSE 0.0027)<br>
 
 ### 🔎 Jobzyl · [jobzyl.com](https://jobzyl.com)
 
-**Live job-search aggregator, built and operated solo.** Queries 20+ boards (Indeed, Adzuna, Reed) with parallel fan-out on miss, per-source timeout isolation, and Server-Sent Events (SSE) streaming for sub-second search results. Includes an ATS-style CV matcher using in-browser parsing to keep user text strictly on-device, alongside server-side deduplication, Kanban-style application tracking, and automated email digest alerts. User CV text is Fernet-encrypted at rest with hard-delete flows.
+**Live job-search aggregator serving a 2M+ posting index.** Queries 20+ boards (Indeed, Adzuna, Reed) with parallel fan-out on miss, per-source timeout isolation, and Server-Sent Events (SSE) streaming for sub-1.5s search results. Features an advanced ATS-style CV matcher and semantic vector ranking engine to score role-fit. Enforces zero-trust privacy via in-browser parsing (Fernet encrypted), alongside server-side deduplication, Kanban-style application tracking, and automated email digest alerts.
 
 ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![Next.js](https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
@@ -217,10 +217,6 @@ Random Forest `R² 0.8569` (MSE 0.0027)<br>
   <img src="https://raw.githubusercontent.com/1oNN/1oNN/main/metrics.languages.svg" alt="Most used languages" width="47%" />
 </picture>
 
-<br>
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=1oNN&background=1a1a1a&ring=6C8EBF&fire=6C8EBF&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=6C8EBF&sideLabels=cfcfcf&dates=cfcfcf&hide_border=true" alt="Contribution streak" width="47%" />
-
 <br><br>
 
 <!-- GitHub Contribution Snake -->
@@ -240,11 +236,11 @@ Random Forest `R² 0.8569` (MSE 0.0027)<br>
 
 <br>
 
-Designed, built and operate [jobzyl.com](https://jobzyl.com), a live job-aggregation platform querying 20+ boards.
+Engineered and operate [jobzyl.com](https://jobzyl.com), a live job-aggregation platform serving a **2M+ posting index** across 20+ boards.
 
-- Cache-first reads with live parallel fan-out on miss, per-source timeout isolation, and SSE streaming for sub-second search results
-- Implemented an ATS-style CV matcher using in-browser parsing to keep user text on-device (Fernet encrypted)
-- Server-side deduplication, Kanban-style application tracking, automated salary normalisation, and email digest alerts
+- Cache-first reads with live parallel fan-out on miss, per-source timeout isolation, and SSE streaming for sub-1.5s retrieval
+- Built an advanced ATS-style CV matcher and semantic vector ranking engine to score role-fit
+- Enforced zero-trust privacy via in-browser parsing (Fernet encrypted), alongside server-side deduplication and Kanban tracking
 - Next.js, TypeScript, React, Python, FastAPI, PostgreSQL, Supabase, AWS
 
 </details>
