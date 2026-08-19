@@ -36,6 +36,24 @@ I build **retrieval systems that pair vector embeddings with knowledge graphs**,
 
 <table>
 <tr>
+<td colspan="2" valign="top">
+
+### 🔎 Jobzyl · [jobzyl.com](https://jobzyl.com)
+
+**Live job-search aggregator serving a 2M+ posting index.** Queries 20+ boards (Indeed, Adzuna, Reed) with parallel fan-out on miss, per-source timeout isolation, and Server-Sent Events (SSE) streaming for sub-1.5s search results. Features an advanced ATS-style CV matcher and semantic vector ranking engine to score role-fit. Enforces zero-trust privacy via in-browser parsing (Fernet encrypted), alongside server-side deduplication, Kanban-style application tracking, and automated email digest alerts.
+
+![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Next.js](https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![Supabase](https://img.shields.io/badge/-Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white)
+![AWS](https://img.shields.io/badge/-AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
+
+</td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 ### 🏛️ [FinLaw-UK](https://github.com/1oNN/finlaw-uk)
@@ -116,24 +134,6 @@ Four regression models compared, winner served behind a Flask form.
 
 Random Forest `R² 0.8569` (MSE 0.0027)<br>
 *First-author, corresponding author*
-
-</td>
-</tr>
-<tr>
-<td colspan="2" valign="top">
-
-### 🔎 Jobzyl · [jobzyl.com](https://jobzyl.com)
-
-**Live job-search aggregator serving a 2M+ posting index.** Queries 20+ boards (Indeed, Adzuna, Reed) with parallel fan-out on miss, per-source timeout isolation, and Server-Sent Events (SSE) streaming for sub-1.5s search results. Features an advanced ATS-style CV matcher and semantic vector ranking engine to score role-fit. Enforces zero-trust privacy via in-browser parsing (Fernet encrypted), alongside server-side deduplication, Kanban-style application tracking, and automated email digest alerts.
-
-![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![Next.js](https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
-![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![Supabase](https://img.shields.io/badge/-Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white)
-![AWS](https://img.shields.io/badge/-AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
 
 </td>
 </tr>
